@@ -5,18 +5,4 @@
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTINF:-1 tvg-id="RCTI" tvg-name="RCTI" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/17/Logo_RCTI.png" group-title="Indonesia",RCTI
-https://rcti-linier.rctiplus.id/rcti-sdi.m3u8?hdnts=exp=1744093251~hmac=3020af526aa9addf5ce71d8bda887b244fb1b0207769cea6f4e17a9335033041\
-#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#EXTINF:-1 tvg-id="RCTI" tvg-name="RCTI" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/17/Logo_RCTI.png" group-title="Indonesia",RCTI
-https://rcti-linier.rctiplus.id/rcti-sdi.m3u8?hdnts=exp=1744093251~hmac=3020af526aa9addf5ce71d8bda887b244fb1b0207769cea6f4e17a9335033041
-#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#EXTINF:-1 tvg-id="RCTI" tvg-name="RCTI" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/17/Logo_RCTI.png" group-title="Indonesia",RCTI
-https://rcti-linier.rctiplus.id/hdntl=exp=1744111251~acl=%2F*~data=hdntl~hmac=55e6e27f9732338282bdbd6161fe03f6dbddff78e8909cf0b9ec510b137125fc/rcti-sdi-avc1_210000=10-mp4a_96000=1.m3u8
+https://rcti-linier.rctiplus.id/hdntl=exp=1744112944~acl=%2F*~data=hdntl~hmac=13bddd9299ce2db25fd0bcbfc78dacd69cc242d559eedb652de491825e874ee4/rcti-sdi-avc1_210000=10-mp4a_96000=1.m3u8
