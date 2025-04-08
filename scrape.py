@@ -10,7 +10,7 @@ import re
 channels = {
     "rcti": {
         "slug": "rcti",
-        "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/gtv.png?raw=true"
+        "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/rcti.png?raw=true"
     },
     "gtv": {
         "slug": "gtv",
