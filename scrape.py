@@ -8,6 +8,7 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import time
 import re
 
+
 options = Options()
 options.add_argument("--headless=new")
 options.add_argument("--no-sandbox")
@@ -40,13 +41,19 @@ seen_urls = set()
 for log in logs:
     msg = log['message']
     if '.m3u8' in msg:
-        urls = re.findall(r'https:\/\/rcti-linier[^"]+\.m3u8[^"]*', msg)
+        urls = re.findall(r'https:\/\/rcti-linier\.rctiplus\.id\/hdntl[^\s"]*', msg)
+        # Hanya ambil yang diakhiri .m3u8 (tanpa parameter path setelahnya)
+        urls = [u for u in urls if re.search(r'\.m3u8(\?|$)', u)]
+        urls = list(set(urls))
         for u in urls:
             if u not in seen_urls:
                 seen_urls.add(u)
                 m3u8_urls.append(u)
                 print("🔗 M3U8 ditemukan:", u)
                 found = True
+        if found:
+            break
+
 
 if not found:
     # Cadangan: cek page_source
@@ -67,5 +74,6 @@ with open("rcti.m3u", "w") as f:
         f.write('#KODIPROP:inputstream.adaptive.manifest_type=hls\n')
         f.write('#EXTINF:-1 tvg-id="RCTI" tvg-name="RCTI" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/17/Logo_RCTI.png" group-title="Indonesia",RCTI\n')
         f.write(url + "\n")
+
 
 driver.quit()
