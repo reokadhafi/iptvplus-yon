@@ -39,10 +39,12 @@ for name, slug in channels.items():
         
         play_btn.click()
         print("▶️ Tombol Play diklik.")
-        skip_btn.click()
-        print("⏩ Tombol Lewati diklik.")
+        # skip_btn.click()
+        # print("⏩ Tombol Lewati diklik.")
     except Exception as e:
         print("❌ Gagal klik tombol play:", e)
+        skip_btn.click()
+        print("⏩ Tombol Lewati diklik.")
 
     time.sleep(15)
 
