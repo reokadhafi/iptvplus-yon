@@ -1,4 +1,4 @@
-name: Scrape RCTI+ m3u8
+name: Scrape M3U8
 
 on:
   workflow_dispatch:
@@ -6,26 +6,24 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout Repo
-      uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
-    - name: Setup Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
-    - name: Install Chrome
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y wget unzip
-        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-        sudo dpkg -i google-chrome-stable_current_amd64.deb || sudo apt --fix-broken install -y
-        google-chrome --version
+      - name: Install dependencies
+        run: |
+          pip install selenium webdriver-manager
 
-    - name: Install Python dependencies
-      run: pip install selenium webdriver-manager
+      - name: Run scraper
+        run: python scrape.py
 
-    - name: Run scraper
-      run: python scrape.py
+      - name: Upload M3U8 to artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: m3u8-output
+          path: output.txt
