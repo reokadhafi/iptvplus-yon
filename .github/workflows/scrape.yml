@@ -24,17 +24,17 @@ jobs:
           pip install selenium webdriver-manager
 
       - name: Install Chrome & ChromeDriver
-  run: |
-    sudo apt update
-    sudo apt install -y wget unzip
-    wget https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.105/linux64/chrome-linux64.zip
-    unzip chrome-linux64.zip
-    sudo mv chrome-linux64 /opt/chrome
-    sudo ln -s /opt/chrome/chrome /usr/bin/google-chrome
-    wget https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.105/linux64/chromedriver-linux64.zip
-    unzip chromedriver-linux64.zip
-    sudo mv chromedriver-linux64/chromedriver /usr/bin/chromedriver
-    sudo chmod +x /usr/bin/chromedriver
+        run: |
+          sudo apt update
+          sudo apt install -y wget unzip
+          wget https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.105/linux64/chrome-linux64.zip
+          unzip chrome-linux64.zip
+          sudo mv chrome-linux64 /opt/chrome
+          sudo ln -s /opt/chrome/chrome /usr/bin/google-chrome
+          wget https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.105/linux64/chromedriver-linux64.zip
+          unzip chromedriver-linux64.zip
+          sudo mv chromedriver-linux64/chromedriver /usr/bin/chromedriver
+          sudo chmod +x /usr/bin/chromedriver
 
 
       - name: Run Python Script
