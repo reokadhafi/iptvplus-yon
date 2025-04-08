@@ -1,8 +1,0 @@
-#EXTM3U
-#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#EXTINF:-1 tvg-id="RCTI" tvg-name="RCTI" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/17/Logo_RCTI.png" group-title="Indonesia",RCTI
-https://rcti-linier.rctiplus.id/hdntl=exp=1744112944~acl=%2F*~data=hdntl~hmac=13bddd9299ce2db25fd0bcbfc78dacd69cc242d559eedb652de491825e874ee4/rcti-sdi-avc1_210000=10-mp4a_96000=1.m3u8
