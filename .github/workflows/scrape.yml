@@ -1,6 +1,7 @@
 name: Scrape M3U8 URL
 
 on:
+  workflow_dispatch:     # 👉 Ini bikin tombol "Run workflow"
   schedule:
     - cron: "0 */2 * * *"  # 🔁 Jalan setiap 2 jam (UTC)
   push:
