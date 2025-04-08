@@ -1,11 +1,12 @@
 import threading
+import requests
+import time
+import re
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
-import re
 
 channels = {
     "rcti": {
@@ -126,21 +127,62 @@ def process_channel(name, info):
     print(f"✅ Selesai memproses channel: {name.upper()}")
     driver.quit()
 
-# Jalankan dengan multithreading
+def load_external_m3u(source):
+    if source.startswith("http"):
+        try:
+            response = requests.get(source, timeout=10)
+            response.raise_for_status()
+            return response.text.splitlines()
+        except Exception as e:
+            print(f"❌ Gagal ambil dari {source}: {e}")
+            return []
+    else:
+        try:
+            with open(source, "r") as f:
+                return f.readlines()
+        except Exception as e:
+            print(f"❌ Gagal baca file lokal {source}: {e}")
+            return []
+
+def clean_duplicates(lines):
+    seen = set()
+    clean = []
+    for line in lines:
+        if line.strip() and not line.startswith("#EXTM3U"):
+            if line not in seen:
+                clean.append(line)
+                seen.add(line)
+    return clean
+
+# Mulai multithread scrape
 threads = []
 for name, info in channels.items():
     t = threading.Thread(target=process_channel, args=(name, info))
     t.start()
     threads.append(t)
 
-# Tunggu semua thread selesai
 for t in threads:
     t.join()
 
-# Simpan hasil
-with open("playlist.m3u", "w") as f:
+# Tambah dari sumber eksternal
+external_sources = [
+    "external1.m3u",  # lokal
+]
+
+for src in external_sources:
+    print(f"\n➕ Menambahkan eksternal: {src}")
+    ext_lines = load_external_m3u(src)
+    playlist_entries.extend(ext_lines)
+
+# Bersihkan dan gabungkan
+final_playlist = clean_duplicates(playlist_entries)
+
+# Simpan ke file
+with open("playlist.m3u", "w", encoding="utf-8") as f:
     f.write("#EXTM3U\n")
-    for entry in playlist_entries:
+    for entry in final_playlist:
+        if not entry.endswith("\n"):
+            entry += "\n"
         f.write(entry)
 
-print("\n🎉 Semua channel berhasil disimpan ke playlist.m3u")
+print("\n🎉 Semua channel + eksternal berhasil disimpan ke playlist.m3u")
