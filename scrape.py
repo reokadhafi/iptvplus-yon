@@ -4,16 +4,20 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import time
 import re
+
+# Aktifkan logging performance
+caps = DesiredCapabilities.CHROME
+caps["goog:loggingPrefs"] = {"performance": "ALL"}
 
 options = Options()
 options.add_argument("--headless=new")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(options=options, desired_capabilities=caps)
 
 driver.get("https://www.rctiplus.com/tv/rcti")
 
