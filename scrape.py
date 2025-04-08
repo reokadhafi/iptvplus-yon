@@ -21,7 +21,7 @@ driver.get("https://www.rctiplus.com/tv/rcti")
 # Klik tombol play
 try:
     play_btn = WebDriverWait(driver, 20).until(
-        EC.element_to_be_clickable((By.CSS_SELECTOR, 'button[class*="vjs-big-play-button"]'))
+    EC.element_to_be_clickable((By.CSS_SELECTOR, 'div.jw-icon.jw-icon-display'))
     )
     play_btn.click()
     print("▶️ Tombol Play diklik.")
