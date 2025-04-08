@@ -117,13 +117,6 @@ https://liveaneviadev.mncnow.id/live/eds/SEA-Channel/sa_dash_vmx/SEA-Channel.mpd
 #EXTINF:-1 tvg-id="SCTV.id" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/sctv.png?raw=true" group-title="Indonesia" ,SCTV                    
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)                      
 https://203.77.246.2:443/udp/239.1.1.108:5000                         
-#EXTINF:-1 tvg-id="Trans7.id" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/trans7.png?raw=true" group-title="Indonesia" ,Trans7                    
-#EXTVLCOPT:http-referrer=https://geo.dailymotion.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36                   
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://live-b.cf.dmcdn.net/sec2(GBfUflqcxC6IWI1HgaltH6aPigoShS-uGD21DNFTxgViui4mBFxSR2sxT3a9T8iL95XpbdhiW_Sp2pyilDpwlJsFMs_ib70WYoB1m0lCqy6FsecdLUZWcBK7ZmotZjE-)/dm/3/x8qckyq/s/live-480.m3u8
 #EXTINF:-1 tvg-id="TransTV.id" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/transtv.png?raw=true" group-title="Indonesia" ,Trans TV                   
 #KODIPROP:inputstream=inputstream.adaptive                         
 #KODIPROP:inputstreamaddon=inputstream.adaptive                         
