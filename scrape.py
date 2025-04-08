@@ -28,41 +28,41 @@ for name, slug in channels.items():
     driver.get(url)
     print(f"\n📺 Memproses channel: {name.upper()}")
 
-    try:
-        # Tunggu beberapa detik agar elemen muncul
-        time.sleep(2)
+    # Tunggu sebentar agar elemen muncul
+    time.sleep(2)
 
-        # Coba klik tombol "Lewati" jika ada (biasanya saat iklan)
+    # Coba klik tombol "Lewati" kalau ada
+    try:
         skip_btn = WebDriverWait(driver, 5).until(
             EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Lewati") or contains(text(), "Skip")]'))
         )
         skip_btn.click()
         print("⏩ Tombol Lewati diklik.")
-        time.sleep(2)  # beri waktu setelah skip
-
-    except Exception:
+        time.sleep(2)
+    except:
         print("ℹ️ Tidak ada tombol Lewati, lanjut ke Play...")
 
+    # Coba klik tombol Play
     try:
-        # Klik tombol Play
-        play_btn = WebDriverWait(driver, 15).until(
+        play_btn = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.CSS_SELECTOR, 'div.jw-icon.jw-icon-display'))
         )
-        play_btn.click()
+        try:
+            play_btn.click()
+        except:
+            driver.execute_script("arguments[0].click();", play_btn)
         print("▶️ Tombol Play diklik.")
     except Exception as e:
         print("❌ Gagal klik tombol Play:", e)
 
-    # Tunggu supaya stream benar-benar berjalan dan URL m3u8 muncul di log
+    # Tunggu agar stream benar-benar mulai
     time.sleep(15)
-
 
     logs = driver.get_log('performance')
     m3u8_urls = []
     seen_urls = set()
     found = False
 
-    # Regex dinamis berdasarkan nama channel
     domain_pattern = rf"https:\/\/{re.escape(name)}-linier\.rctiplus\.id\/hdntl[^\s\"]*"
 
     for log in logs:
@@ -76,10 +76,8 @@ for name, slug in channels.items():
                     m3u8_urls.append(u)
                     print("🔗 M3U8 ditemukan:", u)
                     found = True
-            # if found:
-            #     break
 
-    # Fallback dari HTML
+    # Fallback dari HTML jika perlu
     if not found:
         html = driver.page_source
         fallback_urls = re.findall(r'https.*?\.m3u8[^"]*', html)
@@ -89,7 +87,6 @@ for name, slug in channels.items():
                 m3u8_urls.append(u)
                 print("📄 Dari HTML:", u)
 
-    # Tambahkan ke playlist
     for url in m3u8_urls:
         entry = (
             f'#EXTINF:-1 tvg-id="{name.upper()}" tvg-name="{name.upper()}" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/17/Logo_RCTI.png" group-title="Indonesia",{name.upper()}\n'
@@ -102,7 +99,9 @@ for name, slug in channels.items():
         )
         playlist_entries.append(entry)
 
-# Simpan semua ke satu file playlist.m3u
+    print(f"✅ Selesai memproses channel: {name.upper()}")
+
+# Simpan ke playlist.m3u
 with open("playlist.m3u", "w") as f:
     f.write("#EXTM3U\n")
     for entry in playlist_entries:
