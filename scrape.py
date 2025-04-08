@@ -90,7 +90,6 @@ for name, slug in channels.items():
             f'{url}\n'
         )
         playlist_entries.append(entry)
-
 # Simpan semua ke satu file playlist.m3u
 with open("playlist.m3u", "w") as f:
     f.write("#EXTM3U\n")
