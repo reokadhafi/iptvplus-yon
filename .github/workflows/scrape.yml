@@ -1,6 +1,8 @@
 name: Scrape M3U8 URL
 
 on:
+  schedule:
+    - cron: "0 */2 * * *"  # 🔁 Jalan setiap 2 jam (UTC)
   push:
     paths:
       - scrape.py
@@ -11,6 +13,7 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -21,11 +24,13 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Install ChromeDriver yang cocok
         run: |
-          sudo rm /usr/bin/chromedriver || true
+          pip install -r requirements.txt
+
+      - name: Install Chrome & ChromeDriver
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y unzip wget
           wget -O chromedriver.zip https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chromedriver-linux64.zip
           unzip chromedriver.zip
           sudo mv chromedriver-linux64/chromedriver /usr/bin/chromedriver
@@ -34,16 +39,19 @@ jobs:
       - name: Run Python Script
         run: python scrape.py
 
-      - name: Commit and push rcti.m3u to repository
+      - name: Rename output file to playlist.m3u
+        run: mv rcti.m3u playlist.m3u
+
+      - name: Commit and push playlist.m3u to repository
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
-          git add rcti.m3u
-          git commit -m "Update rcti.m3u from scraper"
+          git add playlist.m3u
+          git commit -m "Update playlist.m3u from scraper" || echo "No changes to commit"
           git push
 
-      - name: Upload M3U Artifact
+      - name: Upload playlist.m3u as Artifact
         uses: actions/upload-artifact@v4.6.2
         with:
           name: rcti-playlist
-          path: rcti.m3u
+          path: playlist.m3u
