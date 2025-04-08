@@ -1,34 +1,29 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="MNCTV" tvg-name="MNCTV" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/mnctv.png?raw=true" group-title="Indonesia",MNCTV
-#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://mnctv-linier.rctiplus.id/hdntl=exp=1744150360~acl=%2F*~data=hdntl~hmac=1cb94b67c5b12051456bfbc2797e8a6070dcbfa364aa7efc7f1d9acc9073e31c/mnctv-sdi-avc1_210000=10-mp4a_96000=1.m3u8
 #EXTINF:-1 tvg-id="RCTI" tvg-name="RCTI" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/rcti.png?raw=true" group-title="Indonesia",RCTI
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://rcti-linier.rctiplus.id/hdntl=exp=1744149760~acl=%2F*~data=hdntl~hmac=d304f034bc274ccb93038b8e9554908efb97b9643b99132f8872bc85d5e9575d/rcti-sdi-avc1_210000=10-mp4a_96000=1.m3u8
-#EXTINF:-1 tvg-id="INEWS" tvg-name="INEWS" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/inews.png?raw=true" group-title="Indonesia",INEWS
+https://rcti-linier.rctiplus.id/hdntl=exp=1744152261~acl=%2F*~data=hdntl~hmac=0ac085e8f2eb6cc8d18aa8279e2f7150345db59189e9ee678e126209de85a37a/rcti-sdi-avc1_210000=10-mp4a_96000=1.m3u8
+#EXTINF:-1 tvg-id="MNCTV" tvg-name="MNCTV" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/mnctv.png?raw=true" group-title="Indonesia",MNCTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://inews-linier.rctiplus.id/hdntl=exp=1744150360~acl=%2F*~data=hdntl~hmac=1cb94b67c5b12051456bfbc2797e8a6070dcbfa364aa7efc7f1d9acc9073e31c/inews-sdi-avc1_210000=9-mp4a_96000=1.m3u8
+https://mnctv-linier.rctiplus.id/hdntl=exp=1744152861~acl=%2F*~data=hdntl~hmac=282252b2bc4ed00c098d62dabc08c841468fb7008a882ec8b50816df3a7f304a/mnctv-sdi-avc1_210000=10-mp4a_96000=1.m3u8
+#EXTINF:-1 tvg-id="Trans7.id" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/trans7.png?raw=true" group-title="Indonesia" ,Trans7                    
+#KODIPROP:inputstream=inputstream.adaptive                         
+#KODIPROP:inputstreamaddon=inputstream.adaptive                         
+#KODIPROP:inputstream.adaptive.manifest_type=hls                         
+https://video.detik.com/trans7/smil:trans7.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ANTV.id" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/antv.png?raw=true" group-title="Indonesia" ,ANTV                    
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)                      
 https://op-group1-swiftservehd-1.dens.tv/s/s07/index.m3u8                         
 #EXTINF:-1 tvg-id="ANTV.id" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/antv.png?raw=true" group-title="Indonesia" ,ANTV 1                   
 http://203.77.246.2:443/udp/239.1.1.104:5000                         
 #EXTINF:-1 tvg-id="BTV.id" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/btv.png?raw=true" group-title="Indonesia" ,BTV                    
-#KODIPROP:inputstream=inputstream.adaptive                         
-#KODIPROP:inputstreamaddon=inputstream.adaptive                         
-#KODIPROP:inputstream.adaptive.manifest_type=hls                         
 https://b1news.beritasatumedia.com/Beritasatu/B1News_manifest.m3u8                         
 #EXTINF:-1 tvg-id="BTV.id" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/btv.png?raw=true" group-title="Indonesia" ,BTV 1                   
 https://op-group1-swiftservehd-1.dens.tv/h/h210/index.m3u8                         
