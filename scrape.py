@@ -45,7 +45,7 @@ def setup_driver():
     options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("window-size=640x360")
+    #options.add_argument("window-size=640x360")
     options.add_argument("--autoplay-policy=no-user-gesture-required")
     options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
     return webdriver.Chrome(options=options)
