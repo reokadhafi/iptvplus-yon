@@ -17,27 +17,6 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install Chrome & ChromeDriver
-        run: |
-          sudo apt update
-          sudo apt install -y wget unzip
-
-          # Install Chrome
-          wget https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.105/linux64/chrome-linux64.zip
-          unzip chrome-linux64.zip
-          sudo mv chrome-linux64 /opt/chrome
-
-          # Only create symlink if not exists
-          if [ ! -e /usr/bin/google-chrome ]; then
-            sudo ln -s /opt/chrome/chrome /usr/bin/google-chrome
-          fi
-
-          # Install ChromeDriver
-          wget https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.105/linux64/chromedriver-linux64.zip
-          unzip chromedriver-linux64.zip
-          sudo mv chromedriver-linux64/chromedriver /usr/bin/chromedriver
-          sudo chmod +x /usr/bin/chromedriver
-
       - name: Install dependencies
         run: pip install -r requirements.txt
 
