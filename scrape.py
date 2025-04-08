@@ -53,9 +53,17 @@ if not found:
         m3u8_urls.append(u)
         print("📄 Dari HTML:", u)
 
-# Simpan URL .m3u8 ke dalam file output.txt
-with open("output.txt", "w") as f:
+# Simpan juga sebagai playlist M3U (untuk VLC / Kodi)
+with open("rcti.m3u", "w") as f:
+    f.write("#EXTM3U\n")
     for url in m3u8_urls:
+        f.write('#EXTVLCOPT:http-referrer=https://www.rctiplus.com/\n')
+        f.write('#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\n')
+        f.write('#KODIPROP:inputstream=inputstream.adaptive\n')
+        f.write('#KODIPROP:inputstreamaddon=inputstream.adaptive\n')
+        f.write('#KODIPROP:inputstream.adaptive.manifest_type=hls\n')
+        f.write('#EXTINF:-1 tvg-id="RCTI" tvg-name="RCTI" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/17/Logo_RCTI.png" group-title="Indonesia",RCTI\n')
         f.write(url + "\n")
+
 
 driver.quit()
