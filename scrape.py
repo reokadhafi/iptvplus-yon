@@ -30,21 +30,22 @@ for name, slug in channels.items():
 
     # Klik tombol play
     try:
-        play_btn = WebDriverWait(driver, 20).until(
-            EC.element_to_be_clickable((By.CSS_SELECTOR, 'div.jw-icon.jw-icon-display'))
-        )
+        
         skip_btn = WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Lewati") or contains(text(), "Skip")]'))
         )
-        
-        play_btn.click()
-        print("▶️ Tombol Play diklik.")
-        # skip_btn.click()
-        # print("⏩ Tombol Lewati diklik.")
-    except Exception as e:
-        print("❌ Gagal klik tombol play:", e)
+
         skip_btn.click()
         print("⏩ Tombol Lewati diklik.")
+        
+        
+    except Exception as e:
+        play_btn = WebDriverWait(driver, 20).until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR, 'div.jw-icon.jw-icon-display'))
+        )
+        play_btn.click()
+        print("▶️ Tombol Play diklik.")
+        print("❌ Gagal klik tombol play:", e)
 
     time.sleep(15)
 
@@ -92,6 +93,7 @@ for name, slug in channels.items():
             f'{url}\n'
         )
         playlist_entries.append(entry)
+
 # Simpan semua ke satu file playlist.m3u
 with open("playlist.m3u", "w") as f:
     f.write("#EXTM3U\n")
