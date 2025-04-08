@@ -68,5 +68,4 @@ with open("rcti.m3u", "w") as f:
         f.write('#EXTINF:-1 tvg-id="RCTI" tvg-name="RCTI" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/17/Logo_RCTI.png" group-title="Indonesia",RCTI\n')
         f.write(url + "\n")
 
-
 driver.quit()
