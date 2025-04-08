@@ -28,26 +28,34 @@ for name, slug in channels.items():
     driver.get(url)
     print(f"\n📺 Memproses channel: {name.upper()}")
 
-    # Klik tombol play
     try:
-        
-        skip_btn = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Lewati") or contains(text(), "Skip")]'))
-        )
+        # Tunggu beberapa detik agar elemen muncul
+        time.sleep(2)
 
+        # Coba klik tombol "Lewati" jika ada (biasanya saat iklan)
+        skip_btn = WebDriverWait(driver, 5).until(
+            EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Lewati") or contains(text(), "Skip")]'))
+        )
         skip_btn.click()
         print("⏩ Tombol Lewati diklik.")
-        
-        
-    except Exception as e:
-        play_btn = WebDriverWait(driver, 20).until(
+        time.sleep(2)  # beri waktu setelah skip
+
+    except Exception:
+        print("ℹ️ Tidak ada tombol Lewati, lanjut ke Play...")
+
+    try:
+        # Klik tombol Play
+        play_btn = WebDriverWait(driver, 15).until(
             EC.element_to_be_clickable((By.CSS_SELECTOR, 'div.jw-icon.jw-icon-display'))
         )
         play_btn.click()
         print("▶️ Tombol Play diklik.")
-        print("❌ Gagal klik tombol play:", e)
+    except Exception as e:
+        print("❌ Gagal klik tombol Play:", e)
 
+    # Tunggu supaya stream benar-benar berjalan dan URL m3u8 muncul di log
     time.sleep(15)
+
 
     logs = driver.get_log('performance')
     m3u8_urls = []
