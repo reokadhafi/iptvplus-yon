@@ -36,15 +36,18 @@ time.sleep(15)
 logs = driver.get_log('performance')
 found = False
 m3u8_urls = []
+seen_urls = set()
 
 for log in logs:
     msg = log['message']
     if '.m3u8' in msg:
-        urls = re.findall(r'https.*?\.m3u8[^"]*', msg)
+        urls = re.findall(r'https:\/\/rcti-linier[^"]+\.m3u8[^"]*', msg)
         for u in urls:
-            m3u8_urls.append(u)
-            print("🔗 M3U8 ditemukan:", u)
-            found = True
+            if u not in seen_urls:
+                seen_urls.add(u)
+                m3u8_urls.append(u)
+                print("🔗 M3U8 ditemukan:", u)
+                found = True
 
 if not found:
     # Cadangan: cek page_source
