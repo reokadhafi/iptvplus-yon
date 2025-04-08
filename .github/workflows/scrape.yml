@@ -5,6 +5,9 @@ on:
     paths:
       - scrape.py
 
+permissions:
+  contents: write
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -30,7 +33,15 @@ jobs:
 
       - name: Run Python Script
         run: python scrape.py
-        
+
+      - name: Commit and push rcti.m3u to repository
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add rcti.m3u
+          git commit -m "Update rcti.m3u from scraper"
+          git push
+
       - name: Upload M3U Artifact
         uses: actions/upload-artifact@v4.6.2
         with:
