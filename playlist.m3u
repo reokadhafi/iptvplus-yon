@@ -1,0 +1,36 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="RCTI" tvg-name="RCTI" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/17/Logo_RCTI.png" group-title="Indonesia",RCTI
+#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://rcti-linier.rctiplus.id/hdntl=exp=1744117196~acl=%2F*~data=hdntl~hmac=6491a028870e502758a70c2c8eef05808cab1864feab888f15a17aa9e5124494/rcti-sdi-avc1_210000=10-mp4a_96000=1.m3u8
+#EXTINF:-1 tvg-id="RCTI" tvg-name="RCTI" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/17/Logo_RCTI.png" group-title="Indonesia",RCTI
+#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://rcti-linier.rctiplus.id/hdntl=exp=1744117196~acl=%2F*~data=hdntl~hmac=6491a028870e502758a70c2c8eef05808cab1864feab888f15a17aa9e5124494/rcti-sdi-avc1_800000=7-mp4a_96000=1.m3u8
+#EXTINF:-1 tvg-id="GTV" tvg-name="GTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5c/Logo_GTV_2017.png" group-title="Indonesia",GTV
+#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://gtv-linier.rctiplus.id/hdntl=exp=1744117837~acl=%2F*~data=hdntl~hmac=b1b88cc0b1915db61234343c4e45b935248e049b60ad372999ea172b5ba2bfaa/gtv-sdi-avc1_800000=9-mp4a_96000=1.m3u8
+#EXTINF:-1 tvg-id="MNCTV" tvg-name="MNCTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6c/Logo_MNCTV_2020.png" group-title="Indonesia",MNCTV
+#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://mnctv-linier.rctiplus.id/hdntl=exp=1744117876~acl=%2F*~data=hdntl~hmac=4eff1bdfb4ffd82df6a104dd6a3bae12bf46d260e2c65971be7fcd181f5e209e/mnctv-sdi-avc1_800000=7-mp4a_96000=1.m3u8
+#EXTINF:-1 tvg-id="INEWS" tvg-name="INEWS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/83/Logo_iNews.png" group-title="Indonesia",INEWS
+#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://inews-linier.rctiplus.id/hdntl=exp=1744117915~acl=%2F*~data=hdntl~hmac=bbdc7ed218e83697ca2d1495eed37da0b686051d875d647b7a82c4c5e3cfb2ea/inews-sdi-avc1_800000=8-mp4a_96000=1.m3u8
