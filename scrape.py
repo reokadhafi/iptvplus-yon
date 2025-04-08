@@ -107,5 +107,6 @@ with open("playlist.m3u", "w") as f:
     for entry in playlist_entries:
         f.write(entry)
 
+
 driver.quit()
 print("\n🎉 Semua channel berhasil disimpan ke playlist.m3u")
