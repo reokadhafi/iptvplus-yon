@@ -8,16 +8,14 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import time
 import re
 
-# Aktifkan logging performance
-caps = DesiredCapabilities.CHROME
-caps["goog:loggingPrefs"] = {"performance": "ALL"}
 
 options = Options()
 options.add_argument("--headless=new")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 
-driver = webdriver.Chrome(options=options, desired_capabilities=caps)
+options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
+driver = webdriver.Chrome(options=options)
 
 driver.get("https://www.rctiplus.com/tv/rcti")
 
