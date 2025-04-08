@@ -39,9 +39,6 @@ jobs:
       - name: Run Python Script
         run: python scrape.py
 
-      - name: Rename output file to playlist.m3u
-        run: mv rcti.m3u playlist.m3u
-
       - name: Commit and push playlist.m3u to repository
         run: |
           git config --global user.name 'github-actions'
