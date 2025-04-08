@@ -31,7 +31,7 @@ jobs:
       - name: Run Python Script
         run: python scrape.py
         
-      - name: Upload M3U file
+      - name: Upload M3U Artifact
         uses: actions/upload-artifact@v3
         with:
           name: rcti-playlist
