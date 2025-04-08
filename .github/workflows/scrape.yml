@@ -1,47 +1,20 @@
-name: Scrape M3U8 URL
+- name: Install Chrome & ChromeDriver
+  run: |
+    sudo apt update
+    sudo apt install -y wget unzip
 
-on:
-  push:
-    paths:
-      - scrape.py
+    # Install Chrome
+    wget https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.105/linux64/chrome-linux64.zip
+    unzip chrome-linux64.zip
+    sudo mv chrome-linux64 /opt/chrome
 
-jobs:
-  scrape:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+    # Only create symlink if it doesn't exist
+    if [ ! -e /usr/bin/google-chrome ]; then
+      sudo ln -s /opt/chrome/chrome /usr/bin/google-chrome
+    fi
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.10
-
-      - name: Install dependencies
-        run: |
-          pip install selenium
-
-      - name: Install Chrome & ChromeDriver
-        run: |
-          sudo apt update
-          sudo apt install -y wget unzip
-          wget https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.105/linux64/chrome-linux64.zip
-          unzip chrome-linux64.zip
-          sudo mv chrome-linux64 /opt/chrome
-          if [ ! -f /usr/bin/google-chrome ]; then
-            sudo ln -s /opt/chrome/chrome /usr/bin/google-chrome
-          fi
-          wget https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.105/linux64/chromedriver-linux64.zip
-          unzip chromedriver-linux64.zip
-          sudo mv chromedriver-linux64/chromedriver /usr/bin/chromedriver
-          sudo chmod +x /usr/bin/chromedriver
-
-
-      - name: Run Python Script
-        run: python scrape.py
-
-      - name: Upload output
-        uses: actions/upload-artifact@v3
-        with:
-          name: output
-          path: output.txt
+    # Install ChromeDriver
+    wget https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.105/linux64/chromedriver-linux64.zip
+    unzip chromedriver-linux64.zip
+    sudo mv chromedriver-linux64/chromedriver /usr/bin/chromedriver
+    sudo chmod +x /usr/bin/chromedriver
