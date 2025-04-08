@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -32,7 +32,7 @@ jobs:
         run: python scrape.py
         
       - name: Upload M3U Artifact
-        uses: actions/upload-artifact@v3.1.3
+        uses: actions/upload-artifact@v4.6.2
         with:
           name: rcti-playlist
           path: rcti.m3u
