@@ -21,18 +21,6 @@ channels = {
     "rcti": {
         "slug": "rcti",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/1/17/Logo_RCTI.png"
-    },
-    "gtv": {
-        "slug": "gtv",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Logo_GTV_2017.png"
-    },
-    "mnctv": {
-        "slug": "mnctv",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Logo_MNCTV_2020.png"
-    },
-    "inews": {
-        "slug": "inews",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/8/83/Logo_iNews.png"
     }
 }
 
