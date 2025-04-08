@@ -20,24 +20,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Install Chrome & ChromeDriver
+      - name: Install ChromeDriver yang cocok
         run: |
-          sudo apt update
-          sudo apt install -y wget unzip
-
-          # Install Chrome
-          wget https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.105/linux64/chrome-linux64.zip
-          unzip chrome-linux64.zip
-          sudo mv chrome-linux64 /opt/chrome
-
-          # Symlink Chrome
-          if [ ! -e /usr/bin/google-chrome ]; then
-            sudo ln -s /opt/chrome/chrome /usr/bin/google-chrome
-          fi
-
-          # Install Chromedriver
-          wget https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.105/linux64/chromedriver-linux64.zip
-          unzip chromedriver-linux64.zip
+          sudo rm /usr/bin/chromedriver || true
+          wget -O chromedriver.zip https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chromedriver-linux64.zip
+          unzip chromedriver.zip
           sudo mv chromedriver-linux64/chromedriver /usr/bin/chromedriver
           sudo chmod +x /usr/bin/chromedriver
 
