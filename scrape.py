@@ -130,8 +130,11 @@ def process_channel(name, info):
                 EC.element_to_be_clickable((By.CSS_SELECTOR, "svg.playback_button_svg"))
             )
         else:
+            #play_btn = WebDriverWait(driver, 5).until(
+                #EC.element_to_be_clickable((By.CSS_SELECTOR, 'div.jw-icon.jw-icon-display'))
+            #)
             play_btn = WebDriverWait(driver, 5).until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, 'div.jw-icon.jw-icon-display'))
+        EC.element_to_be_clickable((By.CSS_SELECTOR, 'div.jw-icon.jw-icon-display.jw-button-color.jw-reset'))
             )
         play_btn.click()
         print("▶️ Tombol Play diklik.")
