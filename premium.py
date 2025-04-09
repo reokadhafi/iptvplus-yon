@@ -75,15 +75,20 @@ async def process_all():
         for url, links in link_results:
             conf = channel_config[url]
             name = conf["name"]
-            logo = conf["logo"]
+            logo = conf.get("logo", "")
             headers = conf.get("headers", {})
             referer = headers.get("Referer", "")
             user_agent = "Mozilla/5.0 (X11; Linux x86_64)"
 
             for i, link in enumerate(links):
                 title = f"{name} {i+1}" if len(links) > 1 else name
+                extinf_line = f"#EXTINF:-1 group-title=\"Premium\""
+                if logo:
+                    extinf_line += f" tvg-logo=\"{logo}\""
+                extinf_line += f",{title}\n"
+
                 entry = (
-                    f"#EXTINF:-1 group-title=Premium tvg-logo={logo},{title}\n"
+                    f"{extinf_line}"
                     f"#EXTVLCOPT:http-referrer={referer}\n"
                     f"#EXTVLCOPT:http-user-agent={user_agent}\n"
                     f"#KODIPROP:inputstream=inputstream.adaptive\n"
@@ -92,6 +97,7 @@ async def process_all():
                     f"{link}\n"
                 )
                 f.write(entry)
+
 
     print("✅ File premium.m3u berhasil dibuat tanpa validasi!")
 
