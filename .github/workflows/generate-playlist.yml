@@ -25,12 +25,20 @@ jobs:
         run: |
           pip install -r requirements.txt
 
+      - name: Run indonesia.py
+        run: python indonesia.py
+        
       - name: Run premium.py
         run: python premium.py
-
 
       - name: Commit and push M3U files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "🔄 Update M3U playlists"
           file_pattern: "*.m3u"
+          
+      - name: Gabungkan indonesia.m3u dan premium.m3u jadi playlist.m3u
+        run: |
+          echo "#EXTM3U" > playlist.m3u
+          tail -n +2 indonesia.m3u >> playlist.m3u || true
+          tail -n +2 premium.m3u >> playlist.m3u || true
