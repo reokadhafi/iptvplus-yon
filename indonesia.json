@@ -23,16 +23,16 @@
         "Referer": "https://20.detik.com/"
       }
     },
-    "https://20.detik.com/live/trans-tv": {
-      "name": "TRANSTV",
-      "headers": {
-        "Referer": "https://20.detik.com/"
-      }
-    },
     "https://www.dens.tv/tv-local/watch/14/kompas-tv": {
       "name": "KOMPASTV",
       "headers": {
         "Referer": "https://www.dens.tv/"
+      }
+    },
+    "https://20.detik.com/live/trans-tv": {
+      "name": "TRANSTV",
+      "headers": {
+        "Referer": "https://20.detik.com/"
       }
     },
     "https://www.dens.tv/tv-local/watch/131/berita-satu": {
