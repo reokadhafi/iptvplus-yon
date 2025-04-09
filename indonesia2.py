@@ -69,7 +69,7 @@ async def process_all():
         ]
         link_results = await asyncio.gather(*futures)
 
-    with open("indonesia.m3u", "w", encoding="utf-8") as f:
+    with open("indonesia2.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
 
         for url, links in link_results:
@@ -92,7 +92,7 @@ async def process_all():
                 )
                 f.write(entry)
 
-    print("✅ File indonesia.m3u berhasil dibuat tanpa validasi!")
+    print("✅ File indonesia2.m3u berhasil dibuat tanpa validasi!")
 
 if __name__ == "__main__":
     asyncio.run(process_all())
