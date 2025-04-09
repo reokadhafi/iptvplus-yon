@@ -34,14 +34,14 @@ https://op-group1-swiftservehd-1.dens.tv/h/h15/index.m3u8?app_type=web&userid=li
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://op-group1-swiftservehd-1.dens.tv/h/h07/index.m3u8?app_type=web&userid=lite&chname=KIX_HD
-#EXTINF:-1 group-title="Premium" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/kbs_korea.png?raw=true",KBS KOREA
+#EXTINF:-1 group-title="Premium" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/KBS_KOREA_logo.png?raw=true",KBS KOREA
 #EXTVLCOPT:http-referrer=https://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://op-group1-swiftservehd-1.dens.tv/h/h241/index.m3u8?app_type=web&userid=lite&chname=KBS_Korea
-#EXTINF:-1 group-title="Premium" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/kbsworld.png?raw=true",KBS WORLD
+#EXTINF:-1 group-title="Premium" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/KBS_World.png?raw=true",KBS WORLD
 #EXTVLCOPT:http-referrer=https://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 #KODIPROP:inputstream=inputstream.adaptive
@@ -104,7 +104,7 @@ https://op-group1-swiftservesd-1.dens.tv/s/s34/index.m3u8?app_type=web&userid=li
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://op-group1-swiftservehd-1.dens.tv/h/h192/index.m3u8?app_type=web&userid=lite&chname=My_Cinema_HD
-#EXTINF:-1 group-title="Premium" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/mycinemaeurope.png?raw=true",MY CINEMA EUROPE HD
+#EXTINF:-1 group-title="Premium" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/mycinema_europe.png?raw=true",MY CINEMA EUROPE HD
 #EXTVLCOPT:http-referrer=https://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 #KODIPROP:inputstream=inputstream.adaptive
@@ -118,28 +118,28 @@ https://op-group1-swiftservehd-1.dens.tv/h/h18/index.m3u8?app_type=web&userid=li
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://op-group1-swiftservehd-1.dens.tv/h/h194/index.m3u8?app_type=web&userid=lite&chname=My_Family_Channel
-#EXTINF:-1 group-title="Premium" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/tv5monde.png?raw=true",TV5MONDE STYLE HD
+#EXTINF:-1 group-title="Premium" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/TV5MONDE_logo.png?raw=true",TV5MONDE STYLE HD
 #EXTVLCOPT:http-referrer=https://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://op-group1-swiftservehd-1.dens.tv/h/h216/index.m3u8?app_type=web&userid=lite&chname=TV5MONDE_Style_HD
-#EXTINF:-1 group-title="Premium" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/crematv.png?raw=true",CREMATV
+#EXTINF:-1 group-title="Premium" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/cremaTV-Logo.png?raw=true",CREMATV
 #EXTVLCOPT:http-referrer=https://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://op-group1-swiftservehd-1.dens.tv/h/h202/index.m3u8?app_type=web&userid=lite&chname=crema.tv
-#EXTINF:-1 group-title="Premium" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/dancetv.png?raw=true",DANCE TV
+#EXTINF:-1 group-title="Premium" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/Dance.png?raw=true",DANCE TV
 #EXTVLCOPT:http-referrer=https://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://op-group1-swiftservehd-1.dens.tv/h/h250/index.m3u8?app_type=web&userid=lite&chname=Dance_TV
-#EXTINF:-1 group-title="Premium" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/fightsports.png?raw=true",FIGHT SPORTS HD
+#EXTINF:-1 group-title="Premium" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/fight_sports.png?raw=true",FIGHT SPORTS HD
 #EXTVLCOPT:http-referrer=https://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 #KODIPROP:inputstream=inputstream.adaptive
