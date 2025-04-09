@@ -1,28 +1,4 @@
 {
-    "https://www.rctiplus.com/tv/mnctv": {
-      "name": "MNCTV",
-      "headers": {
-        "Referer": "https://www.rctiplus.com/"
-      }
-    },
-    "https://www.rctiplus.com/tv/rcti": {
-      "name": "RCTI",
-      "headers": {
-        "Referer": "https://www.rctiplus.com/"
-      }
-    },
-    "https://www.rctiplus.com/tv/gtv": {
-      "name": "GTV",
-      "headers": {
-        "Referer": "https://www.rctiplus.com/"
-      }
-    },
-    "https://www.rctiplus.com/tv/inews": {
-      "name": "INEWS",
-      "headers": {
-        "Referer": "https://www.rctiplus.com/"
-      }
-    },
     "https://www.dens.tv/tv-local/watch/8/antv": {
       "name": "ANTV",
       "headers": {
