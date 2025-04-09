@@ -19,7 +19,7 @@ def setup_driver():
     options.add_argument("window-size=640x360")
     options.add_argument("--autoplay-policy=no-user-gesture-required")
     options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
-    return webdriver.Chrome(service=webdriver.ChromeService(ChromeDriverManager().install()), options=options)
+    return webdriver.Chrome(options=options)
 
 def extract_m3u8_from_logs(logs):
     m3u8_links = []
