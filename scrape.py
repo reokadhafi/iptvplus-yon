@@ -18,7 +18,7 @@ channels = {
     },
     "gtv": {
         "slug": "gtv",
-        "url": "https://www.rctiplus.com/tv/gtv",
+        "url": "https://m.rctiplus.com/tv/gtv?from=live",
         "referer": "https://www.rctiplus.com/",
         "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/gtv.png?raw=true"
     },
