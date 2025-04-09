@@ -67,7 +67,7 @@ def is_valid_m3u8(url, headers):
 def validate_and_format(name, url, headers):
     if is_valid_m3u8(url, headers):
         return (
-            f"#EXTINF:-1 group-title='premium',{name}\n"
+            f"#EXTINF:-1 group-title='Premium',{name}\n"
             f"#EXTVLCOPT:http-referrer={headers['Referer']}\n"
             f"#EXTVLCOPT:http-user-agent={headers['User-Agent']}\n"
             f"#KODIPROP:inputstream=inputstream.adaptive\n"
