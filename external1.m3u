@@ -1,4 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-id="SCTV.id" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/sctv.png?raw=true" group-title="Indonesia" ,SCTV                    
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)                      
-https://203.77.246.2:443/udp/239.1.1.108:5000
