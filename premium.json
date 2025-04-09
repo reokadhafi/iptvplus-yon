@@ -31,7 +31,7 @@
   },
   "https://www.dens.tv/tv-premium/watch/134/kbs-world": {
     "name": "KBS WORLD",
-    "logo": "https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/kbsworld.png?raw=true",
+    "logo": "https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/KBS_World.png?raw=true",
     "headers": { "Referer": "https://www.dens.tv/" }
   },
   "https://www.dens.tv/tv-premium/watch/100/k-plus-hd": {
