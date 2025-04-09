@@ -22,20 +22,8 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Install Chrome & ChromeDriver
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y unzip wget
-          wget -O chromedriver.zip https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chromedriver-linux64.zip
-          unzip chromedriver.zip
-          sudo mv chromedriver-linux64/chromedriver /usr/bin/chromedriver
-          sudo chmod +x /usr/bin/chromedriver
-
       - name: Run indonesia.py
         run: python indonesia.py
-
-      - name: Run premium.py
-        run: python premium.py
 
       - name: Commit and push M3U files
         uses: stefanzweifel/git-auto-commit-action@v5
