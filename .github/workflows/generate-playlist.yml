@@ -22,21 +22,28 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Install Google Chrome
+      - name: Install Google Chrome & ChromeDriver
         run: |
           sudo apt-get update
-          sudo apt-get install -y wget unzip
+          sudo apt-get install -y wget unzip curl gnupg
+      
+          # Install Chrome
           wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo apt install -y ./google-chrome-stable_current_amd64.deb
       
-      - name: Install ChromeDriver
-        run: |
+          # Ambil versi Chrome
           CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+' | head -1)
+          echo "Detected Chrome version: $CHROME_VERSION"
+      
+          # Ambil versi ChromeDriver yang cocok
           CHROMEDRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION")
+          echo "Using ChromeDriver version: $CHROMEDRIVER_VERSION"
+      
+          # Download dan pasang ChromeDriver
           wget -q https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip
           unzip chromedriver_linux64.zip
           sudo mv chromedriver /usr/local/bin/
-
+          chmod +x /usr/local/bin/chromedriver
 
       - name: Run indonesia.py
         run: python indonesia.py
