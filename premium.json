@@ -1,0 +1,142 @@
+{
+  "https://www.dens.tv/tv-premium/watch/38/aniplus-hd": {
+    "name": "ANIPLUS HD",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/96/my-kidz-hd": {
+    "name": "MY KIDZ HD",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/39/rock-entertainment-hd": {
+    "name": "ROCK ENTERTAINMENT HD",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/44/rock-action": {
+    "name": "ROCK ACTION",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/49/kix-hd": {
+    "name": "KIX HD",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/133/kbs-korea": {
+    "name": "KBS KOREA",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/134/kbs-world": {
+    "name": "KBS WORLD",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/100/k-plus-hd": {
+    "name": "K+ HD",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/59/tvn-hd": {
+    "name": "TVN HD",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/58/tvn-movies-hd": {
+    "name": "TVN MOVIES HD",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/99/celestial-movies-hd": {
+    "name": "CELESTIAL MOVIES HD",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/110/ccm-celestial-classic-mv": {
+    "name": "CCM CELESTIAL CLASSIC MV",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/109/my-cinema-asia": {
+    "name": "MY CINEMA ASIA",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/55/thrill": {
+    "name": "THRILL",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/95/my-cinema-hd": {
+    "name": "MY CINEMA HD",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/92/my-cinema-europe-hd": {
+    "name": "MY CINEMA EUROPE HD",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/114/my-family-channel": {
+    "name": "MY FAMILY CHANNEL",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/37/tv5monde-style-hd": {
+    "name": "TV5MONDE STYLE HD",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/127/crematv": {
+    "name": "CREMATV",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/130/dance-tv": {
+    "name": "DANCE TV",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/60/fight-sports-hd": {
+    "name": "FIGHT SPORTS HD",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/98/motorvision": {
+    "name": "MOTORVISION",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-premium/watch/123/w-sport": {
+    "name": "W SPORT",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  }
+}
+
+  
