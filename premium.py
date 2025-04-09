@@ -77,7 +77,7 @@ async def process_all():
             name = conf["name"]
             headers = conf.get("headers", {})
             referer = headers.get("Referer", "")
-            user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+            user_agent = "Mozilla/5.0 (X11; Linux x86_64)"
 
             for i, link in enumerate(links):
                 title = f"{name} {i+1}" if len(links) > 1 else name
