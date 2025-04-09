@@ -26,10 +26,6 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run premium.py
-        env:
-          WDM_LOG_LEVEL: 0
-          WDM_LOCAL: "1"
-          WDM_CACHE: "./.wdm"
         run: python premium.py
 
 
