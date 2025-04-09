@@ -34,10 +34,6 @@ jobs:
       - name: Run premium.py
         run: python premium.py
 
-      - name: Pull latest changes from remote
-        run: |
-          git pull origin main --rebase
-
       - name: Commit and push M3U files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
