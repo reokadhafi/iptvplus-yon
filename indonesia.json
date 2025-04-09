@@ -1,4 +1,10 @@
 {
+    "https://20.detik.com/live/trans-7": {
+      "name": "TRANS7",
+      "headers": {
+        "Referer": "https://20.detik.com/"
+      }
+    },
     "https://www.dens.tv/tv-local/watch/8/antv": {
       "name": "ANTV",
       "headers": {
@@ -17,22 +23,10 @@
         "Referer": "https://www.dens.tv/"
       }
     },
-    "https://20.detik.com/live/trans-7": {
-      "name": "TRANS7",
-      "headers": {
-        "Referer": "https://20.detik.com/"
-      }
-    },
     "https://www.dens.tv/tv-local/watch/14/kompas-tv": {
       "name": "KOMPASTV",
       "headers": {
         "Referer": "https://www.dens.tv/"
-      }
-    },
-    "https://20.detik.com/live/trans-tv": {
-      "name": "TRANSTV",
-      "headers": {
-        "Referer": "https://20.detik.com/"
       }
     },
     "https://www.dens.tv/tv-local/watch/131/berita-satu": {
@@ -81,6 +75,12 @@
       "name": "RODJATV",
       "headers": {
         "Referer": "https://www.dens.tv/"
+      }
+    },
+    "https://20.detik.com/live/trans-tv": {
+      "name": "TRANSTV",
+      "headers": {
+        "Referer": "https://20.detik.com/"
       }
     }
   }
