@@ -1,0 +1,11 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="Trans7.id" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/trans7.png?raw=true" group-title="Indonesia" ,Trans7                    
+#KODIPROP:inputstream=inputstream.adaptive                         
+#KODIPROP:inputstreamaddon=inputstream.adaptive                         
+#KODIPROP:inputstream.adaptive.manifest_type=hls                         
+https://video.detik.com/trans7/smil:trans7.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TransTV.id" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/transtv.png?raw=true" group-title="Indonesia" ,Trans TV                   
+#KODIPROP:inputstream=inputstream.adaptive                         
+#KODIPROP:inputstreamaddon=inputstream.adaptive                         
+#KODIPROP:inputstream.adaptive.manifest_type=hls                         
+https://video.detik.com/transtv/smil:transtv.smil/playlist.m3u8
