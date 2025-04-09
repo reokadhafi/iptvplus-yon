@@ -82,7 +82,7 @@ async def process_all():
             for i, link in enumerate(links):
                 title = f"{name} {i+1}" if len(links) > 1 else name
                 entry = (
-                    f"#EXTINF:-1 group-title='Indonesia',{title}\n"
+                    f"#EXTINF:-1 group-title=Indonesia,{title}\n"
                     f"#EXTVLCOPT:http-referrer={referer}\n"
                     f"#EXTVLCOPT:http-user-agent={user_agent}\n"
                     f"#KODIPROP:inputstream=inputstream.adaptive\n"
