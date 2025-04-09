@@ -4,10 +4,10 @@ on:
   workflow_dispatch:     # 👉 Ini bikin tombol "Run workflow"
   schedule:
     - cron: "0 */2 * * *"  # 🔁 Jalan setiap 2 jam (UTC)
-    
+
 permissions:
   contents: write
-  
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -34,6 +34,10 @@ jobs:
       - name: Run premium.py
         run: python premium.py
 
+      - name: Pull latest changes from remote
+        run: |
+          git pull origin main --rebase
+
       - name: Commit and push M3U files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -48,7 +52,7 @@ jobs:
           tail -n +2 trans.m3u >> playlist.m3u || true
           tail -n +2 premium.m3u >> playlist.m3u || true
 
-      - name: Commit and push M3U files
+      - name: Commit and push combined playlist.m3u
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "🧾 Update M3U playlists"
