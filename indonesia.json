@@ -1,87 +1,100 @@
 {
-    "https://20.detik.com/live/trans-7": {
-      "name": "TRANS7",
-      "headers": {
-        "Referer": "https://20.detik.com/"
-      }
-    },
-    "https://20.detik.com/live/trans-tv": {
-      "name": "TRANSTV",
-      "headers": {
-        "Referer": "https://20.detik.com/"
-      }
-    },
-    "https://www.dens.tv/tv-local/watch/8/antv": {
-      "name": "ANTV",
-      "headers": {
-        "Referer": "https://www.dens.tv/"
-      }
-    },
-    "https://www.dens.tv/tv-local/watch/6/metro-tv": {
-      "name": "METROTV",
-      "headers": {
-        "Referer": "https://www.dens.tv/"
-      }
-    },
-    "https://www.dens.tv/tv-local/watch/7/tvone": {
-      "name": "TVONE",
-      "headers": {
-        "Referer": "https://www.dens.tv/"
-      }
-    },
-    "https://www.dens.tv/tv-local/watch/14/kompas-tv": {
-      "name": "KOMPASTV",
-      "headers": {
-        "Referer": "https://www.dens.tv/"
-      }
-    },
-    "https://www.dens.tv/tv-local/watch/131/berita-satu": {
-      "name": "BERITA_SATU",
-      "headers": {
-        "Referer": "https://www.dens.tv/"
-      }
-    },
-    "https://www.dens.tv/tv-local/watch/13/mdtv": {
-      "name": "MDTV",
-      "headers": {
-        "Referer": "https://www.dens.tv/"
-      }
-    },
-    "https://www.dens.tv/tv-local/watch/22/rtv": {
-      "name": "RTV",
-      "headers": {
-        "Referer": "https://www.dens.tv/"
-      }
-    },
-    "https://www.dens.tv/tv-local/watch/122/magna-channel": {
-      "name": "MAGNA_CHANEL",
-      "headers": {
-        "Referer": "https://www.dens.tv/"
-      }
-    },
-    "https://www.dens.tv/tv-local/watch/118/tvri-sport": {
-      "name": "TVRI_SPORT",
-      "headers": {
-        "Referer": "https://www.dens.tv/"
-      }
-    },
-    "https://www.dens.tv/tv-local/watch/17/tvri": {
-      "name": "TVRI",
-      "headers": {
-        "Referer": "https://www.dens.tv/"
-      }
-    },
-    "https://www.dens.tv/tv-local/watch/112/jak-tv": {
-      "name": "JAKTV",
-      "headers": {
-        "Referer": "https://www.dens.tv/"
-      }
-    },
-    "https://www.dens.tv/tv-local/watch/21/rodjatv": {
-      "name": "RODJATV",
-      "headers": {
-        "Referer": "https://www.dens.tv/"
-      }
+  "https://20.detik.com/live/trans-7": {
+    "name": "TRANS7",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/trans7.png?raw=true",
+    "headers": {
+      "Referer": "https://20.detik.com/"
+    }
+  },
+  "https://20.detik.com/live/trans-tv": {
+    "name": "TRANSTV",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/transtv.png?raw=true",
+    "headers": {
+      "Referer": "https://20.detik.com/"
+    }
+  },
+  "https://www.dens.tv/tv-local/watch/8/antv": {
+    "name": "ANTV",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/antv.png?raw=true",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-local/watch/6/metro-tv": {
+    "name": "METROTV",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/metrotv.png?raw=true",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-local/watch/7/tvone": {
+    "name": "TVONE",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/tvone.png?raw=true",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-local/watch/14/kompas-tv": {
+    "name": "KOMPASTV",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/kompastv.png?raw=true",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-local/watch/131/berita-satu": {
+    "name": "BERITA_SATU",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/2/25/BeritaSatu_tv.png",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-local/watch/13/mdtv": {
+    "name": "MDTV",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6f/MD_Entertainment_Logo.svg", 
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-local/watch/22/rtv": {
+    "name": "RTV",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/rtv.png?raw=true",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-local/watch/122/magna-channel": {
+    "name": "MAGNA_CHANEL",
+    "logo": "https://upload.wikimedia.org/wikipedia/id/d/d9/Magna_Channel_2022_Logo.svg",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-local/watch/118/tvri-sport": {
+    "name": "TVRI_SPORT",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/3/34/TVRI_Sport_Logo_2021.svg",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-local/watch/17/tvri": {
+    "name": "TVRI",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/tvri.png?raw=true",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-local/watch/112/jak-tv": {
+    "name": "JAKTV",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/7/70/JakTV_2018.png",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
+    }
+  },
+  "https://www.dens.tv/tv-local/watch/21/rodjatv": {
+    "name": "RODJATV",
+    "logo": "https://upload.wikimedia.org/wikipedia/id/7/70/Rodja_TV_logo.png",
+    "headers": {
+      "Referer": "https://www.dens.tv/"
     }
   }
-  
+}
