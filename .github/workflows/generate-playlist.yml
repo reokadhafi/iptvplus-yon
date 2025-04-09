@@ -25,8 +25,11 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Run indonesia.py
-        run: python indonesia.py
+      - name: Run indonesia1.py
+        run: python indonesia1.py
+
+      - name: Run indonesia2.py
+        run: python indonesia2.py
         
       - name: Run premium.py
         run: python premium.py
@@ -40,5 +43,6 @@ jobs:
       - name: Gabungkan indonesia.m3u dan premium.m3u jadi playlist.m3u
         run: |
           echo "#EXTM3U" > playlist.m3u
-          tail -n +2 indonesia.m3u >> playlist.m3u || true
+          tail -n +2 indonesia1.m3u >> playlist.m3u || true
+          tail -n +2 indonesia2.m3u >> playlist.m3u || true
           tail -n +2 premium.m3u >> playlist.m3u || true
