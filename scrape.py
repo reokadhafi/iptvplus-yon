@@ -45,7 +45,7 @@ def setup_driver():
     options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
-    #options.add_argument("window-size=640x360")
+    options.add_argument("window-size=640x360")
     options.add_argument("--autoplay-policy=no-user-gesture-required")
     options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
     return webdriver.Chrome(options=options)
@@ -130,12 +130,12 @@ def process_channel(name, info):
                 EC.element_to_be_clickable((By.CSS_SELECTOR, "svg.playback_button_svg"))
             )
         else:
-            #play_btn = WebDriverWait(driver, 5).until(
-                #EC.element_to_be_clickable((By.CSS_SELECTOR, 'div.jw-icon.jw-icon-display'))
-            #)
             play_btn = WebDriverWait(driver, 5).until(
-        EC.element_to_be_clickable((By.CSS_SELECTOR, 'div.jw-icon.jw-icon-display.jw-button-color.jw-reset'))
+                EC.element_to_be_clickable((By.CSS_SELECTOR, 'div.jw-icon.jw-icon-display'))
             )
+            #play_btn = WebDriverWait(driver, 5).until(
+        #EC.element_to_be_clickable((By.CSS_SELECTOR, 'div.jw-icon.jw-icon-display.jw-button-color.jw-reset'))
+            #)
         play_btn.click()
         print("▶️ Tombol Play diklik.")
     except Exception as e:
