@@ -26,7 +26,7 @@
   },
   "https://www.dens.tv/tv-premium/watch/133/kbs-korea": {
     "name": "KBS KOREA",
-    "logo": "https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/kbs_korea.png?raw=true",
+    "logo": "https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/KBS_KOREA_logo.png?raw=true",
     "headers": { "Referer": "https://www.dens.tv/" }
   },
   "https://www.dens.tv/tv-premium/watch/134/kbs-world": {
@@ -76,7 +76,7 @@
   },
   "https://www.dens.tv/tv-premium/watch/92/my-cinema-europe-hd": {
     "name": "MY CINEMA EUROPE HD",
-    "logo": "https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/mycinemaeurope.png?raw=true",
+    "logo": "https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/mycinema_europe.png?raw=true",
     "headers": { "Referer": "https://www.dens.tv/" }
   },
   "https://www.dens.tv/tv-premium/watch/114/my-family-channel": {
@@ -91,17 +91,17 @@
   },
   "https://www.dens.tv/tv-premium/watch/127/crematv": {
     "name": "CREMATV",
-    "logo": "https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/crematv.png?raw=true",
+    "logo": "https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/cremaTV-Logo.png?raw=true",
     "headers": { "Referer": "https://www.dens.tv/" }
   },
   "https://www.dens.tv/tv-premium/watch/130/dance-tv": {
     "name": "DANCE TV",
-    "logo": "https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/dancetv.png?raw=true",
+    "logo": "https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/Dance.png?raw=true",
     "headers": { "Referer": "https://www.dens.tv/" }
   },
   "https://www.dens.tv/tv-premium/watch/60/fight-sports-hd": {
     "name": "FIGHT SPORTS HD",
-    "logo": "https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/fightsports.png?raw=true",
+    "logo": "https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/fight_sports.png?raw=true",
     "headers": { "Referer": "https://www.dens.tv/" }
   },
   "https://www.dens.tv/tv-premium/watch/98/motorvision": {
