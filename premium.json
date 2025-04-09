@@ -86,7 +86,7 @@
   },
   "https://www.dens.tv/tv-premium/watch/37/tv5monde-style-hd": {
     "name": "TV5MONDE STYLE HD",
-    "logo": "https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/tv5monde.png?raw=true",
+    "logo": "https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/TV5MONDE_logo.png?raw=true",
     "headers": { "Referer": "https://www.dens.tv/" }
   },
   "https://www.dens.tv/tv-premium/watch/127/crematv": {
