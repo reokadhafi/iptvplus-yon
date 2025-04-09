@@ -1,142 +1,163 @@
 {
   "https://www.dens.tv/tv-premium/watch/38/aniplus-hd": {
     "name": "ANIPLUS HD",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/aniplus.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/96/my-kidz-hd": {
     "name": "MY KIDZ HD",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/mykidz.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/39/rock-entertainment-hd": {
     "name": "ROCK ENTERTAINMENT HD",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/rockentertainment.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/44/rock-action": {
     "name": "ROCK ACTION",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/rockaction.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/49/kix-hd": {
     "name": "KIX HD",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/kix.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/133/kbs-korea": {
     "name": "KBS KOREA",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/kbs.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/134/kbs-world": {
     "name": "KBS WORLD",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/kbsworld.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/100/k-plus-hd": {
     "name": "K+ HD",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/kplus.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/59/tvn-hd": {
     "name": "TVN HD",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/tvn.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/58/tvn-movies-hd": {
     "name": "TVN MOVIES HD",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/tvnmovies.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/99/celestial-movies-hd": {
     "name": "CELESTIAL MOVIES HD",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/celestialmovies.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/110/ccm-celestial-classic-mv": {
     "name": "CCM CELESTIAL CLASSIC MV",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/ccm.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/109/my-cinema-asia": {
     "name": "MY CINEMA ASIA",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/mycinemaasia.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/55/thrill": {
     "name": "THRILL",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/thrill.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/95/my-cinema-hd": {
     "name": "MY CINEMA HD",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/mycinema.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/92/my-cinema-europe-hd": {
     "name": "MY CINEMA EUROPE HD",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/mycinemaeurope.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/114/my-family-channel": {
     "name": "MY FAMILY CHANNEL",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/myfamilychannel.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/37/tv5monde-style-hd": {
     "name": "TV5MONDE STYLE HD",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/tv5monde.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/127/crematv": {
     "name": "CREMATV",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/crematv.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/130/dance-tv": {
     "name": "DANCE TV",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/dancetv.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/60/fight-sports-hd": {
     "name": "FIGHT SPORTS HD",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/fightsports.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/98/motorvision": {
     "name": "MOTORVISION",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/motorvision.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   },
   "https://www.dens.tv/tv-premium/watch/123/w-sport": {
     "name": "W SPORT",
+    "logo": "https://github.com/riotryulianto/iptv-playlists/blob/main/icons/wsport.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
   }
 }
-
-  
