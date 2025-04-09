@@ -69,7 +69,7 @@ async def process_all():
         ]
         link_results = await asyncio.gather(*futures)
 
-    with open("premium.m3u", "w", encoding="utf-8") as f:
+    with open("indonesia.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
 
         for url, links in link_results:
