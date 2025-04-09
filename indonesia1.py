@@ -89,7 +89,7 @@ def save_playlist(name, logo, referer, m3u8):
     entry = (
         f'#EXTINF:-1 tvg-id="{name.upper()}" tvg-name="{name.upper()}" tvg-logo="{logo}" group-title="Indonesia",{name.upper()}\n'
         f'#EXTVLCOPT:http-referrer={referer}\n'
-        '#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\n'
+        '#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)\n'
         '#KODIPROP:inputstream=inputstream.adaptive\n'
         '#KODIPROP:inputstreamaddon=inputstream.adaptive\n'
         '#KODIPROP:inputstream.adaptive.manifest_type=hls\n'
