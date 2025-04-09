@@ -189,17 +189,11 @@ for name, info in channels.items():
         success = True
         break
 
-# Gabungkan dengan file eksternal jika berhasil scrape
+# Simpan hasil scrape jika sukses
 if success:
-    # Load eksternal
-    ext_lines = load_external_m3u("external1.m3u")
-    
-    # Gabung: hasil scrape (playlist_entries) + eksternal (ext_lines)
     combined_lines = []
     for entry in playlist_entries:
         combined_lines.extend(entry.strip().splitlines())
-
-    combined_lines.extend(ext_lines)
 
     # Bersihkan duplikat
     final_playlist = clean_duplicates(combined_lines)
@@ -212,6 +206,6 @@ if success:
                 line += "\n"
             f.write(line)
 
-    print("\n🎉 Playlist berhasil digabung dan disimpan ke indonesia1.m3u")
+    print("\n🎉 Playlist berhasil disimpan ke indonesia1.m3u")
 else:
     print("\n🚫 Gagal mendapatkan token dari semua channel.")
