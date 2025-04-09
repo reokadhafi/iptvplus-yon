@@ -71,7 +71,7 @@
   },
   "https://www.dens.tv/tv-local/watch/118/tvri-sport": {
     "name": "TVRI_SPORT",
-    "logo": "https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/TVRI_Sport.png?raw=true",
+    "logo": "https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/tvrisport.png?raw=true",
     "headers": {
       "Referer": "https://www.dens.tv/"
     }
