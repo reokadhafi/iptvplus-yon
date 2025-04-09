@@ -25,9 +25,6 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Run indonesia.py
-        run: python indonesia.py
-
       - name: Run premium.py
         run: python premium.py
 
