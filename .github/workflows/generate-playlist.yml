@@ -3,7 +3,7 @@ name: Generate M3U Playlists
 on:
   workflow_dispatch:     # 👉 Ini bikin tombol "Run workflow"
   schedule:
-    - cron: "0 */2 * * *"  # 🔁 Jalan setiap 2 jam (UTC)
+    - cron: "0 */6 * * *"  # 🔁 Jalan setiap 2 jam (UTC)
 
 permissions:
   contents: write
