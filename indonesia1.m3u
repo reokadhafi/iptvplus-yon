@@ -5,25 +5,25 @@
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://rcti-linier.rctiplus.id/hdntl=exp=1747071638~acl=%2F*~data=hdntl~hmac=32de32b65435016cb2519112264b31b40754d40f4c0cbc2ffe2fde251c4b7d8f/rcti-sdi-avc1_800000=9-mp4a_96000=1.m3u8
+https://rcti-linier.rctiplus.id/hdntl=exp=1747092520~acl=%2F*~data=hdntl~hmac=4042e6983d40ff5d04b8eb81afcb9a7a73b97bbd5ac7bcbf59219c3b137d967b/rcti-sdi-avc1_800000=9-mp4a_96000=1.m3u8
 #EXTINF:-1 tvg-id="GTV" tvg-name="GTV" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/gtv.png?raw=true" group-title="Indonesia",GTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://gtv-linier.rctiplus.id/hdntl=exp=1747071638~acl=%2F*~data=hdntl~hmac=32de32b65435016cb2519112264b31b40754d40f4c0cbc2ffe2fde251c4b7d8f/gtv-sdi-avc1_800000=9-mp4a_96000=1.m3u8
+https://gtv-linier.rctiplus.id/hdntl=exp=1747092520~acl=%2F*~data=hdntl~hmac=4042e6983d40ff5d04b8eb81afcb9a7a73b97bbd5ac7bcbf59219c3b137d967b/gtv-sdi-avc1_800000=9-mp4a_96000=1.m3u8
 #EXTINF:-1 tvg-id="MNCTV" tvg-name="MNCTV" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/mnctv.png?raw=true" group-title="Indonesia",MNCTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://mnctv-linier.rctiplus.id/hdntl=exp=1747071638~acl=%2F*~data=hdntl~hmac=32de32b65435016cb2519112264b31b40754d40f4c0cbc2ffe2fde251c4b7d8f/mnctv-sdi-avc1_800000=9-mp4a_96000=1.m3u8
+https://mnctv-linier.rctiplus.id/hdntl=exp=1747092520~acl=%2F*~data=hdntl~hmac=4042e6983d40ff5d04b8eb81afcb9a7a73b97bbd5ac7bcbf59219c3b137d967b/mnctv-sdi-avc1_800000=9-mp4a_96000=1.m3u8
 #EXTINF:-1 tvg-id="INEWS" tvg-name="INEWS" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/inews.png?raw=true" group-title="Indonesia",INEWS
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://inews-linier.rctiplus.id/hdntl=exp=1747071638~acl=%2F*~data=hdntl~hmac=32de32b65435016cb2519112264b31b40754d40f4c0cbc2ffe2fde251c4b7d8f/inews-sdi-avc1_800000=9-mp4a_96000=1.m3u8
+https://inews-linier.rctiplus.id/hdntl=exp=1747092520~acl=%2F*~data=hdntl~hmac=4042e6983d40ff5d04b8eb81afcb9a7a73b97bbd5ac7bcbf59219c3b137d967b/inews-sdi-avc1_800000=9-mp4a_96000=1.m3u8
