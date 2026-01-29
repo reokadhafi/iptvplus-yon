@@ -113,5 +113,20 @@
     "name": "W SPORT",
     "logo": "https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/wsport.png?raw=true",
     "headers": { "Referer": "https://www.dens.tv/" }
+  },
+  "https://www.dens.tv/tv-free-streaming/watch/141/wedosports": {
+    "name": "wedosports",
+    "logo": "",
+    "headers": { "Referer": "https://www.dens.tv/" }
+  },
+  "https://www.dens.tv/tv-free-streaming/watch/140/wedotvbig-stories": {
+    "name": "wedotvbig-stories",
+    "logo": "",
+    "headers": { "Referer": "https://www.dens.tv/" }
+  },
+  "https://www.dens.tv/tv-free-streaming/watch/139/wedotvmovies": {
+    "name": "wedotvmovies",
+    "logo": "",
+    "headers": { "Referer": "https://www.dens.tv/" }
   }
 }
