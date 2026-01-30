@@ -1,5 +1,7 @@
 import json
 import time
+from urllib.parse import urlparse, parse_qs, unquote
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -20,8 +22,6 @@ CHANNELS = {
 # =========================
 def setup_driver():
     opts = Options()
-
-    # WAJIB di Linux / GitHub Actions
     opts.add_argument("--headless=new")
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-dev-shm-usage")
@@ -29,8 +29,6 @@ def setup_driver():
     opts.add_argument("--disable-software-rasterizer")
     opts.add_argument("--remote-debugging-port=9222")
     opts.add_argument("--window-size=1280,800")
-
-    # Anti deteksi ringan
     opts.add_argument("--disable-blink-features=AutomationControlled")
     opts.add_argument("--mute-audio")
 
@@ -39,19 +37,16 @@ def setup_driver():
         "(KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
     )
 
-    # Aktifkan performance log
+    # Performance log (XHR)
     opts.set_capability("goog:loggingPrefs", {"performance": "ALL"})
 
     driver = webdriver.Chrome(options=opts)
-
-    # WAJIB: enable network XHR logging
-    driver.execute_cdp_cmd("Network.enable", {})
-
+    driver.execute_cdp_cmd("Network.enable", {})  # WAJIB
     return driver
 
 
 # =========================
-# KLIK PLAY VIDEO
+# KLIK PLAY
 # =========================
 def click_play(driver):
     try:
@@ -66,10 +61,38 @@ def click_play(driver):
             if (btn) btn.click();
         """)
 
-    # Pastikan video benar-benar ada
+    # Pastikan <video> benar-benar ada
     WebDriverWait(driver, 20).until(
         EC.presence_of_element_located((By.TAG_NAME, "video"))
     )
+
+
+# =========================
+# DECODE mu= DARI jwpltx
+# =========================
+def decode_mu_if_any(url: str):
+    """
+    Jika URL adalah jwpltx ping.gif dan punya parameter mu= (URL-encoded),
+    kembalikan m3u8 ASLI. Kalau tidak, return None.
+    """
+    if "jwpltx.com" not in url or "mu=" not in url:
+        return None
+
+    qs = parse_qs(urlparse(url).query)
+    mu = qs.get("mu", [None])[0]
+    if not mu:
+        return None
+
+    real = unquote(mu)
+    return real if ".m3u8" in real else None
+
+
+# =========================
+# PILIH BITRATE TERTINGGI
+# =========================
+def bitrate_score(u: str) -> int:
+    nums = "".join(c if c.isdigit() else " " for c in u).split()
+    return max(map(int, nums)) if nums else 0
 
 
 # =========================
@@ -78,22 +101,30 @@ def click_play(driver):
 def find_m3u8(driver, channel_key):
     found = set()
 
-    # polling network ±30 detik
+    # polling ±30 detik
     for _ in range(15):
         logs = driver.get_log("performance")
 
         for entry in logs:
             msg = json.loads(entry["message"])["message"]
+            if msg.get("method") != "Network.requestWillBeSent":
+                continue
 
-            if msg.get("method") == "Network.requestWillBeSent":
-                url = msg["params"]["request"]["url"]
+            url = msg["params"]["request"]["url"]
 
-                if (
-                    ".m3u8" in url
-                    and channel_key in url
-                    and "ads" not in url
-                ):
-                    found.add(url)
+            # 1) Ambil m3u8 langsung (PRIORITAS)
+            if (
+                ".m3u8" in url
+                and "1s1.rctiplus.id/live" in url
+                and channel_key in url
+            ):
+                found.add(url)
+                continue
+
+            # 2) Decode dari jwpltx ping.gif (mu=)
+            decoded = decode_mu_if_any(url)
+            if decoded and channel_key in decoded and "1s1.rctiplus.id/live" in decoded:
+                found.add(decoded)
 
         if found:
             break
@@ -103,11 +134,7 @@ def find_m3u8(driver, channel_key):
     if not found:
         return None
 
-    # pilih bitrate tertinggi (angka terbesar di URL)
-    def bitrate_score(u):
-        nums = "".join(c if c.isdigit() else " " for c in u).split()
-        return max(map(int, nums)) if nums else 0
-
+    # pilih bitrate tertinggi
     return sorted(found, key=bitrate_score)[-1]
 
 
@@ -119,11 +146,11 @@ def main():
     results = {}
 
     try:
-        for name, url in CHANNELS.items():
-            print(f"📡 Memproses {name} ...")
-            driver.get(url)
-
+        for name, page in CHANNELS.items():
+            print(f"📡 {name} ...")
+            driver.get(page)
             time.sleep(8)
+
             click_play(driver)
             time.sleep(3)
 
@@ -134,9 +161,8 @@ def main():
                 results[name] = m3u8
                 print(f"✅ {name} OK")
             else:
-                print(f"❌ {name} gagal (m3u8 tidak ditemukan)")
+                print(f"❌ {name} gagal")
 
-        # TULIS M3U
         if results:
             with open("indonesia1.m3u", "w", encoding="utf-8") as f:
                 f.write("#EXTM3U\n")
@@ -147,8 +173,7 @@ def main():
                         "#EXTVLCOPT:http-user-agent=Mozilla/5.0\n"
                         f"{link}\n"
                     )
-
-            print("\n🎉 File indonesia1.m3u berhasil dibuat")
+            print("\n🎉 indonesia1.m3u berhasil dibuat")
         else:
             print("\n⚠️ Tidak ada channel yang berhasil")
 
