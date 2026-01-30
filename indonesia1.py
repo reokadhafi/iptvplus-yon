@@ -99,9 +99,9 @@ def bitrate_score(u: str) -> int:
 # CARI M3U8 DARI NETWORK
 # =========================
 def find_m3u8(driver, channel_key):
-    found = set()
+    avc1_links = set()
+    fallback_links = set()
 
-    # polling ±30 detik
     for _ in range(15):
         logs = driver.get_log("performance")
 
@@ -112,30 +112,36 @@ def find_m3u8(driver, channel_key):
 
             url = msg["params"]["request"]["url"]
 
-            # 1) Ambil m3u8 langsung (PRIORITAS)
+            # --- decode mu= dari jwpltx ---
+            decoded = decode_mu_if_any(url)
+            if decoded:
+                url = decoded
+
             if (
                 ".m3u8" in url
-                and "1s1.rctiplus.id/live" in url
+                and "1s1.rctiplus.id/live/eds" in url
                 and channel_key in url
             ):
-                found.add(url)
-                continue
+                if "sdi-avc1" in url:
+                    avc1_links.add(url)
+                else:
+                    fallback_links.add(url)
 
-            # 2) Decode dari jwpltx ping.gif (mu=)
-            decoded = decode_mu_if_any(url)
-            if decoded and channel_key in decoded and "1s1.rctiplus.id/live" in decoded:
-                found.add(decoded)
-
-        if found:
+        if avc1_links:
             break
 
         time.sleep(2)
 
-    if not found:
-        return None
+    # PRIORITAS 1: sdi-avc1
+    if avc1_links:
+        return sorted(avc1_links, key=bitrate_score)[-1]
 
-    # pilih bitrate tertinggi
-    return sorted(found, key=bitrate_score)[-1]
+    # PRIORITAS 2: fallback (kalau avc1 benar-benar tidak ada)
+    if fallback_links:
+        return sorted(fallback_links, key=bitrate_score)[-1]
+
+    return None
+
 
 
 # =========================
