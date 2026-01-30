@@ -2,11 +2,9 @@ import json
 import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
 
 
 CHANNELS = {
@@ -17,30 +15,44 @@ CHANNELS = {
 }
 
 
+# =========================
+# SETUP CHROME (CI SAFE)
+# =========================
 def setup_driver():
     opts = Options()
+
+    # WAJIB di Linux / GitHub Actions
+    opts.add_argument("--headless=new")
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-dev-shm-usage")
-    opts.add_argument("--mute-audio")
+    opts.add_argument("--disable-gpu")
+    opts.add_argument("--disable-software-rasterizer")
+    opts.add_argument("--remote-debugging-port=9222")
     opts.add_argument("--window-size=1280,800")
+
+    # Anti deteksi ringan
     opts.add_argument("--disable-blink-features=AutomationControlled")
+    opts.add_argument("--mute-audio")
+
     opts.add_argument(
-        "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
         "(KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
     )
 
+    # Aktifkan performance log
     opts.set_capability("goog:loggingPrefs", {"performance": "ALL"})
 
-    driver = webdriver.Chrome(
-        service=Service(ChromeDriverManager().install()),
-        options=opts
-    )
+    driver = webdriver.Chrome(options=opts)
 
-    # PENTING: enable Network logging
+    # WAJIB: enable network XHR logging
     driver.execute_cdp_cmd("Network.enable", {})
+
     return driver
 
 
+# =========================
+# KLIK PLAY VIDEO
+# =========================
 def click_play(driver):
     try:
         WebDriverWait(driver, 20).until(
@@ -54,18 +66,22 @@ def click_play(driver):
             if (btn) btn.click();
         """)
 
-    # tunggu elemen <video> benar-benar ada
+    # Pastikan video benar-benar ada
     WebDriverWait(driver, 20).until(
         EC.presence_of_element_located((By.TAG_NAME, "video"))
     )
 
 
-def find_m3u8(driver, keyword):
+# =========================
+# CARI M3U8 DARI NETWORK
+# =========================
+def find_m3u8(driver, channel_key):
     found = set()
 
-    # polling 15x (±30 detik)
+    # polling network ±30 detik
     for _ in range(15):
         logs = driver.get_log("performance")
+
         for entry in logs:
             msg = json.loads(entry["message"])["message"]
 
@@ -74,7 +90,7 @@ def find_m3u8(driver, keyword):
 
                 if (
                     ".m3u8" in url
-                    and keyword in url
+                    and channel_key in url
                     and "ads" not in url
                 ):
                     found.add(url)
@@ -87,20 +103,27 @@ def find_m3u8(driver, keyword):
     if not found:
         return None
 
-    # pilih bitrate tertinggi (angka terbesar)
-    return sorted(found, key=lambda x: int("".join(filter(str.isdigit, x))))[-1]
+    # pilih bitrate tertinggi (angka terbesar di URL)
+    def bitrate_score(u):
+        nums = "".join(c if c.isdigit() else " " for c in u).split()
+        return max(map(int, nums)) if nums else 0
+
+    return sorted(found, key=bitrate_score)[-1]
 
 
+# =========================
+# MAIN
+# =========================
 def main():
     driver = setup_driver()
     results = {}
 
     try:
         for name, url in CHANNELS.items():
-            print(f"📡 {name}...")
+            print(f"📡 Memproses {name} ...")
             driver.get(url)
-            time.sleep(8)
 
+            time.sleep(8)
             click_play(driver)
             time.sleep(3)
 
@@ -111,8 +134,9 @@ def main():
                 results[name] = m3u8
                 print(f"✅ {name} OK")
             else:
-                print(f"❌ {name} gagal")
+                print(f"❌ {name} gagal (m3u8 tidak ditemukan)")
 
+        # TULIS M3U
         if results:
             with open("indonesia1.m3u", "w", encoding="utf-8") as f:
                 f.write("#EXTM3U\n")
@@ -120,11 +144,13 @@ def main():
                     f.write(
                         f'\n#EXTINF:-1 tvg-id="{ch}" group-title="Indonesia", {ch}\n'
                         "#EXTVLCOPT:http-referrer=https://www.rctiplus.com/\n"
-                        "#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)\n"
+                        "#EXTVLCOPT:http-user-agent=Mozilla/5.0\n"
                         f"{link}\n"
                     )
 
-            print("\n🎉 indonesia1.m3u berhasil dibuat")
+            print("\n🎉 File indonesia1.m3u berhasil dibuat")
+        else:
+            print("\n⚠️ Tidak ada channel yang berhasil")
 
     finally:
         driver.quit()
