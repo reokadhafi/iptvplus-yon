@@ -1,10 +1,10 @@
 {
-  "name": "iptv-scanner",
-  "version": "1.0.0",
+  "name": "iptvplus-yon",
   "private": true,
   "scripts": {
     "scan:indonesia": "node scanner.js indonesia",
-    "scan:premium": "node scanner.js premium"
+    "scan:premium": "node scanner.js premium",
+    "scan:indonesia1": "node indonesia1.js"
   },
   "dependencies": {
     "playwright": "^1.42.0"
