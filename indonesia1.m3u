@@ -2,20 +2,20 @@
 
 #EXTINF:-1 tvg-id="RCTI" group-title="Indonesia", RCTI
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://1s1.rctiplus.id/live/eds/rcti-sdi/hft/rcti-sdi-avc1_210000=10-mp4a_96000=1.m3u8?auth_key=1769744080-24f1c59119d5539817625fe874073b63-0-7d86d0f727d360855b048aa0bc9ff896
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://1s1.rctiplus.id/live/eds/rcti-sdi/hft/rcti-sdi-avc1_210000=10-mp4a_96000=1.m3u8?auth_key=1769744634-2aab1b7fe3dbed95030b78b2dbece8b8-0-396516653b51d5d9edf2dc47628f8bd5
 
 #EXTINF:-1 tvg-id="MNCTV" group-title="Indonesia", MNCTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://prd.jwpltx.com/v1/jwplayer6/ping.gif?h=226237642&e=s&n=2696923351474986&abc=1&aid=mdyvtEqzEem4uIpQnVGJHQ&amp=0&at=0&c=1&ccp=0&cp=0&d=1&eb=0&ed=6&emi=1xwrm0v14zvq&i=0&lid=12faw6awzlpm&lsa=read&mt=0&pbd=1&pbr=1&pgi=1ggyqrqt0wsa&ph=0&pii=0&pl=426&plc=1&pli=1fxihyo2tszd&pp=hlsjs&ppm=DVR&prc=1&ps=4&pss=1&pt=Live%20Streaming%20mnctv%20Hari%20Ini%20-%20TV%20Online%20Indonesia%20%7C%20RCTI%2B&pu=https%3A%2F%2Fwww.rctiplus.com%2Ftv%2Fmnctv&pv=8.39.3&pyc=1&s=0&sdk=0&stc=1&stpe=0&t=MNCTV&tv=4.0.9&vb=0&vi=0&vl=90&wd=757&bwe=500&cae=0&cct=0&ch=2&cst=896&cdid=fta-live&drm=0&ff=250&fsm=0&l=0&lng=id&mk=hls&mu=https%3A%2F%2F1s1.rctiplus.id%2Flive%2Feds%2Fmnctv-sdi%2Fhft%2Fmnctv-sdi.m3u8%3Fauth_key%3D1769744116-13fb159c4b86101bf810a2d7d407f83e-0-9a84fb9859a1824d3d88b23d8ae51fa3&pcp=896&pd=2&pdr=&pdt=2026-01-30T03%3A30%3A32Z&plng=id&pni=0&pr=2&q=0&sp=0&tb=898&tt=0&vd=0&vs=5&sa=1769743843456
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://prd.jwpltx.com/v1/jwplayer6/ping.gif?h=-503598662&e=pa&n=3722949854644966&abc=0&aid=mdyvtEqzEem4uIpQnVGJHQ&amp=0&at=1&c=1&ccp=0&cp=0&d=1&eb=0&ed=6&emi=y9xletzcsqsl&i=0&lid=1rjp6467y7mg&lsa=read&mt=0&pbd=1&pbr=1&pgi=e7wde1kv2jia&ph=0&pii=0&pl=414&plc=1&pli=1i8v159o3ugj&pp=hlsjs&prc=1&ps=4&pss=1&pt=Live%20Streaming%20mnctv%20Hari%20Ini%20-%20TV%20Online%20Indonesia%20%7C%20RCTI%2B&pu=https%3A%2F%2Fwww.rctiplus.com%2Ftv%2Fmnctv&pv=8.39.3&pyc=0&s=0&sdk=0&stc=1&stpe=0&t=MNCTV&tv=4.0.9&vb=1&vi=1&vl=90&wd=737&ab=1&bwe=500&cme=0&flc=1&lng=id&mu=https%3A%2F%2F1s1.rctiplus.id%2Flive%2Feds%2Fmnctv-sdi%2Fhft%2Fmnctv-sdi.m3u8%3Fauth_key%3D1769744669-d054245e047b7151383c184e1c302e5b-0-ed6a318bf174bb67d4fbefdd353c1158&pd=2&pdr=&plng=id&pni=0&pogt=Live%20Streaming%20mnctv%20Hari%20Ini%20-%20TV%20Online%20Indonesia%20%7C%20RCTI%2B&pr=2&tb=0&vd=0&sa=1769744369579
 
 #EXTINF:-1 tvg-id="GTV" group-title="Indonesia", GTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://prd.jwpltx.com/v1/jwplayer6/ping.gif?h=83181892&e=s&n=5481948057924506&abc=1&aid=mdyvtEqzEem4uIpQnVGJHQ&amp=0&at=0&c=1&ccp=0&cp=0&d=1&eb=0&ed=6&emi=70dsrivk88nf&i=0&lid=12faw6awzlpm&lsa=read&mt=0&pbd=1&pbr=1&pgi=umts45zj6v3w&ph=0&pii=0&pl=426&plc=1&pli=12ixa6j14n4e&pp=hlsjs&ppm=DVR&prc=1&ps=4&pss=1&pt=Live%20Streaming%20gtv%20Hari%20Ini%20-%20TV%20Online%20Indonesia%20%7C%20RCTI%2B&pu=https%3A%2F%2Fwww.rctiplus.com%2Ftv%2Fgtv&pv=8.39.3&pyc=1&s=0&sdk=0&stc=1&stpe=0&t=GLOBALTV&tv=4.0.9&vb=0&vi=0&vl=90&wd=757&bwe=20966&cae=0&cct=0&ch=2&cst=896&cdid=fta-live&drm=0&ff=270&fsm=0&l=0&lng=id&mk=hls&mu=https%3A%2F%2F1s1.rctiplus.id%2Flive%2Feds%2Fgtv-sdi%2Fhft%2Fgtv-sdi.m3u8%3Fauth_key%3D1769744150-86daa2c61bf419ab9a242a4d7c74e4b1-0-f83ec4f1a001cca4d8da660c5905bc4f&pcp=896&pd=2&pdr=&pdt=2026-01-30T03%3A30%3A43Z&plng=id&pni=0&pr=2&q=0&sp=0&strt=1280&tb=898&tt=0&vd=0&vs=5&sa=1769743853555
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://1s1.rctiplus.id/live/eds/gtv-sdi/hft/gtv-sdi-avc1_210000=11-mp4a_96000=1.m3u8?auth_key=1769744704-9586b9342997a616b31839c44fae6894-0-de8114c181a0ab0481ac0ad473ceaa21
 
 #EXTINF:-1 tvg-id="iNews" group-title="Indonesia", iNews
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://prd.jwpltx.com/v1/jwplayer6/ping.gif?h=-530781517&e=s&n=0288485228065586&abc=1&aid=mdyvtEqzEem4uIpQnVGJHQ&amp=0&at=0&c=1&ccp=0&cp=0&d=1&eb=0&ed=6&emi=2u7bwg1xmiko&i=0&lid=12faw6awzlpm&lsa=read&mt=0&pbd=1&pbr=1&pgi=nr9uyr1c8f5m&ph=0&pii=0&pl=426&plc=1&pli=1l675s9f2tdg&pp=hlsjs&ppm=DVR&prc=1&ps=4&pss=1&pt=Live%20Streaming%20inews%20Hari%20Ini%20-%20TV%20Online%20Indonesia%20%7C%20RCTI%2B&pu=https%3A%2F%2Fwww.rctiplus.com%2Ftv%2Finews&pv=8.39.3&pyc=1&s=0&sdk=0&stc=1&stpe=0&t=INEWS&tv=4.0.9&vb=0&vi=0&vl=90&wd=757&bwe=26016&cae=0&cct=0&ch=2&cst=896&cdid=fta-live&drm=0&ff=240&fsm=0&l=0&lng=id&mk=hls&mu=https%3A%2F%2F1s1.rctiplus.id%2Flive%2Feds%2Finews-sdi%2Fhft%2Finews-sdi.m3u8%3Fauth_key%3D1769744185-68663660041cd95e16be157b8f939e59-0-cd24419a5738bd8e35bf7d67dfa78170&pcp=896&pd=2&pdr=&pdt=2026-01-30T03%3A31%3A17Z&plng=id&pni=0&pr=2&q=0&sp=0&strt=1340&tb=898&tt=0&vd=0&vs=5&sa=1769743889191
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://1s1.rctiplus.id/live/eds/inews-sdi/hft/inews-sdi.m3u8?auth_key=1769744738-ed70a6c560528d6c747aac9780188c6a-0-51a5080d589590208cc1e7ed1cf1128c
