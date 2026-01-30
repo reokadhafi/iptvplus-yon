@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 */6 * * *"   # tiap 6 jam
+permissions:
+  contents: write
 
 jobs:
   scan-and-merge:
@@ -39,7 +41,7 @@ jobs:
         run: |
           echo "#EXTM3U" > playlist.m3u
 
-          for f in indonesia.m3u indonesia1.m3u premium.m3u; do
+          for f in indonesia.m3u indonesia1.m3u premium.m3u trans.m3u; do
             if [ -f "$f" ]; then
               echo "## FROM: $f" >> playlist.m3u
               grep -v '^#EXTM3U' "$f" >> playlist.m3u
