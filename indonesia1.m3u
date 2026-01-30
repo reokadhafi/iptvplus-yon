@@ -3,19 +3,19 @@
 #EXTINF:-1 tvg-id="RCTI" group-title="Indonesia", RCTI
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/live/eds/rcti-sdi/hft/rcti-sdi-avc1_600000=9-mp4a_96000=1.m3u8?auth_key=1769746818-8cda354068e02418d7e481e875f064f2-0-67c9a56c52bf0a74c4762a98424e8ffc
+https://1s1.rctiplus.id/live/eds/rcti-sdi/hft/rcti-sdi-avc1_210000=10-mp4a_96000=1.m3u8?auth_key=1769752507-a4ca9b105e07bd9a4a638533e517e3e9-0-220daf59b82aa596d74c71de81fcc29f
 
 #EXTINF:-1 tvg-id="MNCTV" group-title="Indonesia", MNCTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/live/eds/mnctv-sdi/hft/mnctv-sdi-avc1_600000=8-mp4a_96000=1.m3u8?auth_key=1769745848-24e032b0f82c8a4ce5fd4b6a2b8307bb-0-753d7657b8f8dce0e20c34c5b95872f2
+https://1s1.rctiplus.id/live/eds/mnctv-sdi/hft/mnctv-sdi-avc1_210000=10-mp4a_96000=1.m3u8?auth_key=1769752507-39fda5c1ed36ceaec49f1ebb3c70a64e-0-5924421cd2db3a6a4f85cc2c9fd794d4
 
 #EXTINF:-1 tvg-id="GTV" group-title="Indonesia", GTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/live/eds/gtv-sdi/hft/gtv-sdi.m3u8?auth_key=1769745884-cbd71a0a8941a62463444ca19354db55-0-9dda0243f60eeaa5a1f0ef59d44bd392
+https://1s1.rctiplus.id/live/eds/gtv-sdi/hft/gtv-sdi-avc1_210000=11-mp4a_96000=1.m3u8?auth_key=1769752507-7b8d9188a238f4b47288d88c2e8a011a-0-09cbd02e15a082e98906d10d71908de3
 
-#EXTINF:-1 tvg-id="iNews" group-title="Indonesia", iNews
+#EXTINF:-1 tvg-id="INEWS" group-title="Indonesia", INEWS
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/live/eds/inews-sdi/hft/inews-sdi-avc1_600000=10-mp4a_96000=1.m3u8?auth_key=1769745918-07bca1aafb386e8c4e5a802716319713-0-1efde93eec490295fee79fc12a0e4ef2
+https://1s1.rctiplus.id/live/eds/inews-sdi/hft/inews-sdi-avc1_210000=9-mp4a_96000=1.m3u8?auth_key=1769752505-1d3cb98869fa837a952f8358491f0ff5-0-1d2117d77c859377754790f8a97c312a
