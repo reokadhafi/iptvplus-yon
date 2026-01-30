@@ -1,0 +1,12 @@
+{
+  "name": "iptv-scanner",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "scan:indonesia": "node scanner.js indonesia",
+    "scan:premium": "node scanner.js premium"
+  },
+  "dependencies": {
+    "playwright": "^1.42.0"
+  }
+}
