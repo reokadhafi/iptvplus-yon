@@ -80,25 +80,15 @@ https://op-group1-swiftservesd-1.dens.tv/s/s14/index.m3u8?app_type=web&userid=li
 
 ## FROM: indonesia1.m3u
 
-#EXTINF:-1 tvg-id="RCTI" group-title="Indonesia", RCTI
-#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/anevia1/rcti-sdi-avc1_600000=9-mp4a_96000=1.m3u8?auth_key=1769842345-1b138123a55dfc0a6aac6fa256853670-0-6393cd964bafd3212f8cf724e64c5d34
-
-#EXTINF:-1 tvg-id="MNCTV" group-title="Indonesia", MNCTV
-#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/anevia2/mnctv-sdi-avc1_600000=8-mp4a_96000=1.m3u8?auth_key=1769842345-730de4378eb64359278be2e2934ed68c-0-af0580d8f9484f07f3171d2dd2e2223c
-
 #EXTINF:-1 tvg-id="GTV" group-title="Indonesia", GTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/anevia3/gtv-sdi-avc1_600000=7-mp4a_96000=1.m3u8?auth_key=1769842345-78ab462878f2f6e447e2f54b65858ea4-0-fa05fcd0676e8363b0b2691c767b35fe
+https://1s1.rctiplus.id/anevia3/gtv-sdi-avc1_600000=7-mp4a_96000=1.m3u8?auth_key=1769864581-0a2e5a1af8c0f97e46a2c093a6d2e9c1-0-5f894e064f9a010df6b347a66d96f597
 
 #EXTINF:-1 tvg-id="INEWS" group-title="Indonesia", INEWS
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/anevia4/inews-sdi-avc1_600000=10-mp4a_96000=1.m3u8?auth_key=1769842343-7a4043d476b5a243a35c4c05857a7d91-0-5c7018261b20a98fca0c4d8f0afcea78
+https://1s1.rctiplus.id/anevia4/inews-sdi-avc1_600000=10-mp4a_96000=1.m3u8?auth_key=1769864580-6936e839b9be46d972fcf06c15beb44f-0-6b53e9626ac9c19b5a5f401d6beccdc5
 
 ## FROM: premium.m3u
 #EXTINF:-1 group-title="PREMIUM" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/mycinema_europe.png?raw=true",MY CINEMA EUROPE HD
