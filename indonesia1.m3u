@@ -3,9 +3,9 @@
 #EXTINF:-1 tvg-id="GTV" group-title="Indonesia", GTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/anevia3/gtv-sdi-avc1_210000=11-mp4a_96000=1.m3u8?auth_key=1770465353-4c5f3bd46c25a3c22eabe812775b7749-0-50358e8b0bb5a6a0c255fdfa3fc59f6d
+https://1s1.rctiplus.id/anevia3/gtv-sdi-avc1_210000=11-mp4a_96000=1.m3u8?auth_key=1770466246-caad669f761e5dfd3e8b08ccf58f090e-0-2d4770672406e0d2119d42eedc6c322d
 
 #EXTINF:-1 tvg-id="INEWS" group-title="Indonesia", INEWS
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/anevia4/inews-sdi-avc1_210000=9-mp4a_96000=1.m3u8?auth_key=1770465353-4f2ef692ffd5c346fbbe0aed8931f0e5-0-42178cec40d1157212474cff9954932b
+https://1s1.rctiplus.id/anevia4/inews-sdi-avc1_210000=9-mp4a_96000=1.m3u8?auth_key=1770466246-235f75b9f72ab9a67bbc97e29c4df569-0-fea6e797791f9f2760447ae19edebae3
