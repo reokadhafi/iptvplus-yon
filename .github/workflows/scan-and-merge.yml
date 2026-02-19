@@ -1,5 +1,9 @@
 name: IPTV Scan & Merge Playlist
 
+concurrency:
+  group: playlist-update
+  cancel-in-progress: false
+  
 on:
   workflow_dispatch:
   schedule:
@@ -56,6 +60,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
+          git pull --rebase origin main
           git add *.m3u
           git commit -m "auto: update playlists" || echo "No changes"
-          git push
+          git push origin main
