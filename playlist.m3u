@@ -83,22 +83,22 @@ https://op-group1-swiftservesd-1.dens.tv/s/s14/index.m3u8?app_type=web&userid=li
 #EXTINF:-1 tvg-id="RCTI" group-title="Indonesia", RCTI
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://rcti-linier.rctiplus.id/hdntl=exp=1771625036~acl=%2F*~data=hdntl~hmac=7d9cbd7dd445cdccad4c3c41ad169124cdfb6ab1b5cd5c9704c79cf08fdacbc3/rcti-sdi-avc1_210000=10-mp4a_96000=1.m3u8
+https://rcti-linier.rctiplus.id/hdntl=exp=1771646901~acl=%2F*~data=hdntl~hmac=b9e646164af436574ef0b8375b5dc369336a1a5f4a8e9ae75fc9e00f0c2409d6/rcti-sdi-avc1_210000=10-mp4a_96000=1.m3u8
 
 #EXTINF:-1 tvg-id="MNCTV" group-title="Indonesia", MNCTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://mnctv-linier.rctiplus.id/hdntl=exp=1771625037~acl=%2F*~data=hdntl~hmac=10f328694a1f15edee689ad310e53ef68abcfdaa2d30b383c2452004c2b0ad77/mnctv-sdi-avc1_210000=10-mp4a_96000=1.m3u8
+https://mnctv-linier.rctiplus.id/hdntl=exp=1771646904~acl=%2F*~data=hdntl~hmac=45f38b51bf7b15634ce67ae3462cfa136be9e74bdbaaea15901e84c271489364/mnctv-sdi-avc1_210000=10-mp4a_96000=1.m3u8
 
 #EXTINF:-1 tvg-id="GTV" group-title="Indonesia", GTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://gtv-linier.rctiplus.id/hdntl=exp=1771625036~acl=%2F*~data=hdntl~hmac=7d9cbd7dd445cdccad4c3c41ad169124cdfb6ab1b5cd5c9704c79cf08fdacbc3/gtv-sdi-avc1_210000=11-mp4a_96000=1.m3u8
+https://gtv-linier.rctiplus.id/hdntl=exp=1771646903~acl=%2F*~data=hdntl~hmac=06808301f2dcb0b28ba2e0950c4e71396d6ea356c07b23bd2a16c553f0cc4539/gtv-sdi-avc1_210000=11-mp4a_96000=1.m3u8
 
 #EXTINF:-1 tvg-id="INEWS" group-title="Indonesia", INEWS
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://inews-linier.rctiplus.id/hdntl=exp=1771625035~acl=%2F*~data=hdntl~hmac=5d8148e7b52290492aa39c87fcd45f15ae0c5ecc81164d77d44e766b3ff20015/inews-sdi-avc1_210000=9-mp4a_96000=1.m3u8
+https://inews-linier.rctiplus.id/hdntl=exp=1771646903~acl=%2F*~data=hdntl~hmac=06808301f2dcb0b28ba2e0950c4e71396d6ea356c07b23bd2a16c553f0cc4539/inews-sdi-avc1_210000=9-mp4a_96000=1.m3u8
 
 ## FROM: premium.m3u
 #EXTINF:-1 group-title="PREMIUM" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/mycinema_europe.png?raw=true",MY CINEMA EUROPE HD
