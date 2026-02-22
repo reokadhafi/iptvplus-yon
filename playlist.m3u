@@ -76,29 +76,29 @@ https://op-group1-swiftservesd-1.dens.tv/s/s123/index2.m3u8?app_type=web&userid=
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://rodjatv.com/rodjatv/live_720p2628kbs/index.m3u8?app_type=web&userid=lite&chname=RodjaTV
+https://op-group1-swiftservesd-1.dens.tv/s/s14/index.m3u8?app_type=web&userid=lite&chname=RodjaTV
 
 ## FROM: indonesia1.m3u
 
 #EXTINF:-1 tvg-id="RCTI" group-title="Indonesia", RCTI
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/rcti-sdi-avc1_210000=10-mp4a_96000=1.m3u8?auth_key=1771699667-20da43bddfe2e0b97840f54cd140a526-0-1fc1121cbc276cfb3a1fd1c8d3fc37ea
+https://1s1.rctiplus.id/rcti-sdi-avc1_210000=10-mp4a_96000=1.m3u8?auth_key=1771727941-8749cdfc75eda100cad253f5e004c8c7-0-bd481520c06ea5c1acc7e5b15d7a3053
 
 #EXTINF:-1 tvg-id="MNCTV" group-title="Indonesia", MNCTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/mnctv-sdi-avc1_210000=10-mp4a_96000=1.m3u8?auth_key=1771699667-e1e3c3a1b0b7296cdf1f952d39a87716-0-23f6422b596167c96b193fb1d735c455
+https://1s1.rctiplus.id/mnctv-sdi-avc1_210000=10-mp4a_96000=1.m3u8?auth_key=1771727942-b3202423f4facfd66384b8cbaa5374c8-0-c904c8f087366a9061a9c5be9eaf98e0
 
 #EXTINF:-1 tvg-id="GTV" group-title="Indonesia", GTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/gtv-sdi-avc1_210000=11-mp4a_96000=1.m3u8?auth_key=1771699668-633f699be42923c01c5bef016e3fe80e-0-5579bfbf2e5ff40e087ca8cfa11ee0e7
+https://1s1.rctiplus.id/gtv-sdi-avc1_210000=11-mp4a_96000=1.m3u8?auth_key=1771727942-90d83a9df21e8dd3f587432a17dfc25a-0-7f38af7c662f5e29f355b0f30e6afa3a
 
 #EXTINF:-1 tvg-id="INEWS" group-title="Indonesia", INEWS
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/inews-sdi-avc1_210000=9-mp4a_96000=1.m3u8?auth_key=1771699668-7114f56c688a488a430128c8c4ccfb5c-0-9d290db5edd9719b468d1037d71f7265
+https://1s1.rctiplus.id/inews-sdi-avc1_210000=9-mp4a_96000=1.m3u8?auth_key=1771727942-852ce2f8f98cb8f008d8594ac19db54c-0-327db90f4870ff16181acdc9581dffc8
 
 ## FROM: premium.m3u
 #EXTINF:-1 group-title="PREMIUM" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/mycinema_europe.png?raw=true",MY CINEMA EUROPE HD
