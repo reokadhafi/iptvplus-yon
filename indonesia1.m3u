@@ -3,19 +3,19 @@
 #EXTINF:-1 tvg-id="RCTI" group-title="Indonesia", RCTI
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/anevia1/rcti-sdi-avc1_210000=10-mp4a_96000=1.m3u8?auth_key=1772713750-b0f64180f43bcd1cad923e25a1be736b-0-1f1861360f005419cf99517889f9e85a
+https://1s1.rctiplus.id/anevia1/rcti-sdi-avc1_210000=10-mp4a_96000=1.m3u8?auth_key=1772730008-13f5ef05c9ee10a0d92c64769f87d648-0-aa3b19b14785fbf3ff47e2d26b5dc045
 
 #EXTINF:-1 tvg-id="MNCTV" group-title="Indonesia", MNCTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/anevia2/mnctv-sdi-avc1_210000=10-mp4a_96000=1.m3u8?auth_key=1772713750-6e2dbc00dff0aeec1521046ef32828ab-0-1b71c6423652dfaebf561ac741feef9f
+https://1s1.rctiplus.id/anevia2/mnctv-sdi-avc1_210000=10-mp4a_96000=1.m3u8?auth_key=1772730008-75b6c9fc80d0c14e7dbf09fab63a9a7b-0-3af35a87fccb98fc81fd072d2d872b19
 
 #EXTINF:-1 tvg-id="GTV" group-title="Indonesia", GTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/anevia3/gtv-sdi-avc1_210000=11-mp4a_96000=1.m3u8?auth_key=1772713750-53dd537815ca88124267ccabf2163838-0-83b4a1c7e2f83977c8fb29000f15f038
+https://1s1.rctiplus.id/anevia3/gtv-sdi-avc1_210000=11-mp4a_96000=1.m3u8?auth_key=1772730008-ef23246890a654f33523c931505a87ca-0-b49e756b6a4df6e7006daaaa6278d7c6
 
 #EXTINF:-1 tvg-id="INEWS" group-title="Indonesia", INEWS
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/anevia4/inews-sdi-avc1_210000=9-mp4a_96000=1.m3u8?auth_key=1772713750-92cce98d4ab83735e2b30e96ba120aaf-0-f1293d8b7ef0a079af93f10d206c54f9
+https://1s1.rctiplus.id/anevia4/inews-sdi-avc1_210000=9-mp4a_96000=1.m3u8?auth_key=1772730008-133cae128e8b41a297d7cc7e20e7245b-0-1c67402a7d364d8d5696a7155db622d2
