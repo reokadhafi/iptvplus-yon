@@ -83,22 +83,22 @@ https://op-group1-swiftservesd-1.dens.tv/s/s14/index.m3u8?app_type=web&userid=li
 #EXTINF:-1 tvg-id="RCTI" group-title="Indonesia", RCTI
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/anevia1/rcti-sdi-avc1_600000=9-mp4a_96000=1.m3u8?auth_key=1772885642-55951462adb4f16844d92c764f57f314-0-3853e3cabffe1a015d4911dacde6aaaf
+https://1s1.rctiplus.id/anevia1/rcti-sdi-avc1_210000=10-mp4a_96000=1.m3u8?auth_key=1772902196-307354cbe6d2f7022bdd5c8035778db4-0-924456692a5dcc67ced74aeaeb80a14f
 
 #EXTINF:-1 tvg-id="MNCTV" group-title="Indonesia", MNCTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/anevia2/mnctv-sdi-avc1_600000=8-mp4a_96000=1.m3u8?auth_key=1772885642-75d3242a2ce1a1c76c8586a2ed6cb705-0-7cd20d4124ce841fcdcfd5a71b64993a
+https://1s1.rctiplus.id/anevia2/mnctv-sdi-avc1_600000=8-mp4a_96000=1.m3u8?auth_key=1772902195-a0fea05765899a4120cfc076d5df8085-0-a7de62d540cb52d48416b39f581c0ab2
 
 #EXTINF:-1 tvg-id="GTV" group-title="Indonesia", GTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/anevia3/gtv-sdi-avc1_600000=7-mp4a_96000=1.m3u8?auth_key=1772885642-5138bee4eb508f0eb23d85af7ca0bcc2-0-facbb32e489cfdc792d473b0e8c96d3a
+https://1s1.rctiplus.id/anevia3/gtv-sdi-avc1_600000=7-mp4a_96000=1.m3u8?auth_key=1772902195-1534c8ad908f0d7548ceffadaebd5b95-0-c3dff386d54b7407da8e532795d8c0b0
 
 #EXTINF:-1 tvg-id="INEWS" group-title="Indonesia", INEWS
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://1s1.rctiplus.id/anevia4/inews-sdi-avc1_210000=9-mp4a_96000=1.m3u8?auth_key=1772885642-62d7abc95c76e8703ffd7d4ff27d1e84-0-8cc1281df95b11870f8f27db92485654
+https://1s1.rctiplus.id/anevia4/inews-sdi-avc1_210000=9-mp4a_96000=1.m3u8?auth_key=1772902196-bffb79b404be724ff749f1f1e3393a2f-0-7adac9002f24f225712f7a43a34d6385
 
 ## FROM: premium.m3u
 #EXTINF:-1 group-title="PREMIUM" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/mycinema_europe.png?raw=true",MY CINEMA EUROPE HD
