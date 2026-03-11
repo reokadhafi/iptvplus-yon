@@ -3,38 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple IPTV Player</title>
+    <title>IPTV Player Pro - Custom Playlist</title>
     
     <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
-    
     <style>
-        body { background-color: #1a1a1a; color: white; font-family: sans-serif; margin: 0; padding: 20px; }
-        .container { max-width: 900px; margin: auto; }
-        .video-container { width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
-        .info { margin-top: 20px; padding: 15px; background: #333; border-radius: 8px; }
-        h1 { font-size: 1.5rem; color: #00ff88; }
-        code { background: #000; padding: 5px; border-radius: 4px; color: #ffcc00; word-break: break-all; }
+        :root { --primary: #00ff88; --bg: #121212; --panel: #1e1e1e; }
+        body { background-color: var(--bg); color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; display: flex; flex-direction: column; height: 100vh; }
+        
+        /* Header & Input Section */
+        header { padding: 15px; background: var(--panel); border-bottom: 1px solid #333; text-align: center; }
+        .input-group { display: flex; gap: 10px; max-width: 800px; margin: 10px auto; }
+        input { flex: 1; padding: 10px; border-radius: 5px; border: none; background: #333; color: white; }
+        button { padding: 10px 20px; border-radius: 5px; border: none; background: var(--primary); color: #000; font-weight: bold; cursor: pointer; }
+        button:hover { background: #00cc6e; }
+
+        /* Main Layout */
+        main { display: flex; flex: 1; overflow: hidden; }
+        .video-wrapper { flex: 3; background: #000; display: flex; align-items: center; }
+        .playlist-wrapper { flex: 1; background: var(--panel); overflow-y: auto; border-left: 1px solid #333; min-width: 250px; }
+        
+        /* Playlist Items */
+        .channel-item { padding: 12px; border-bottom: 1px solid #333; cursor: pointer; transition: 0.2s; font-size: 0.9rem; }
+        .channel-item:hover { background: #2a2a2a; color: var(--primary); }
+        .channel-item.active { background: #333; border-left: 4px solid var(--primary); color: var(--primary); }
+
+        @media (max-width: 768px) {
+            main { flex-direction: column; }
+            .playlist-wrapper { height: 300px; }
+        }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>Gemini IPTV Player</h1>
-    
-    <div class="video-container">
-        <video
-            id="my-video"
-            class="video-js vjs-big-play-centered vjs-16-9"
-            controls
-            preload="auto"
-            data-setup='{}'>
-            <source src="https://raw.githubusercontent.com/reokadhafi/iptvplus-yon/refs/heads/main/playlist.m3u" type="application/x-mpegURL">
-            <p class="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-            </p>
+<header>
+    <strong>📺 Gemini IPTV Player</strong>
+    <div class="input-group">
+        <input type="text" id="m3u-url" placeholder="Masukkan Link M3U di sini..." value="https://raw.githubusercontent.com/reokadhafi/iptvplus-yon/refs/heads/main/playlist.m3u">
+        <button onclick="loadPlaylist()">Muat Playlist</button>
+    </div>
+</header>
+
+<main>
+    <div class="video-wrapper">
+        <video id="iptv-player" class="video-js vjs-big-play-centered vjs-16-9" controls preload="auto" width="100%">
+            <p class="vjs-no-js">Gunakan browser modern untuk menonton.</p>
         </video>
     </div>
+
+    <div class="playlist-wrapper" id="playlist">
+        <div style="padding: 20px; text-align: center; color: #888;">Klik 'Muat Playlist' untuk melihat daftar channel</div>
+    </div>
+</main>
+
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+
+<script>
+    const player = videojs('iptv-player');
+    const playlistEl = document.getElementById('playlist');
+    const inputUrl = document.getElementById('m3u-url');
+
+    async function loadPlaylist() {
+        const url = inputUrl.value.trim();
+        if (!url) return alert("Masukkan link M3U dulu!");
+
+        playlistEl.innerHTML = '<div style="padding:20px; text-align:center;">Loading...</div>';
+
+        try {
+            const response = await fetch(url);
+            const data = await response.text();
+            parseM3U(data);
+        } catch (error) {
+            alert("Gagal memuat playlist. Pastikan link benar dan mendukung CORS.");
+            playlistEl.innerHTML = '<div style="padding:20px; color:red;">Gagal memuat data.</div>';
+        }
+    }
+
+    function parseM3U(content) {
+        const lines = content.split('\n');
+        const channels = [];
+        let currentName = "";
+
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i].trim();
+            if (line.startsWith('#EXTINF:')) {
+                // Mengambil nama channel setelah tanda koma terakhir
+                currentName = line.split(',').pop() || "Unknown Channel";
+            } else if (line.startsWith('http')) {
+                channels.push({ name: currentName, url: line });
+            }
+        }
+
+        renderPlaylist(channels);
+    }
+
+    function renderPlaylist(channels) {
+        playlistEl.innerHTML = "";
+        if (channels.length === 0) {
+            playlistEl.innerHTML = '<div style="padding:20px;">Tidak ada channel ditemukan.</div>';
+            return;
+        }
+
+        channels.forEach((ch, index) => {
+            const div = document.createElement('div');
+            div.className = 'channel-item';
+            div.innerText = `${index + 1}. ${ch.name}`;
+            div.onclick = () => playChannel(ch.url, div);
+            playlistEl.appendChild(div);
+        });
+
+        // Putar channel pertama secara otomatis
+        playChannel(channels[0].url, playlistEl.firstChild);
+    }
+
+    function playChannel(url, element) {
+        // Hapus class active dari semua item
+        document.querySelectorAll('.channel-item').forEach(el => el.classList.remove('active'));
+        // Tambah class active ke yang diklik
+        element.classList.add('active');
+
+        player.src({
+            src: url,
+            type: 'application/x-mpegURL'
+        });
+        player.play();
+    }
+</script>
+
+</body>
+</html>    </div>
 
     <div class="info">
         <h3>Informasi Playlist:</h3>
