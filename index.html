@@ -3,38 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPTV Player Pro - Custom Playlist</title>
+    <title>Advanced IPTV Player - Web Edition</title>
     
     <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
-        :root { --primary: #00ff88; --bg: #121212; --panel: #1e1e1e; }
-        body { background-color: var(--bg); color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; display: flex; flex-direction: column; height: 100vh; }
-        
+        :root {
+            --bg-dark: #0f0f0f;
+            --panel-dark: #1e1e1e;
+            --accent: #00ffa3;
+            --text-main: #ffffff;
+            --text-dim: #aaaaaa;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
         /* Header & Input Section */
-        header { padding: 15px; background: var(--panel); border-bottom: 1px solid #333; text-align: center; }
-        .input-group { display: flex; gap: 10px; max-width: 800px; margin: 10px auto; }
-        input { flex: 1; padding: 10px; border-radius: 5px; border: none; background: #333; color: white; }
-        button { padding: 10px 20px; border-radius: 5px; border: none; background: var(--primary); color: #000; font-weight: bold; cursor: pointer; }
-        button:hover { background: #00cc6e; }
+        header {
+            padding: 15px 20px;
+            background: var(--panel-dark);
+            border-bottom: 1px solid #333;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            z-index: 10;
+        }
 
-        /* Main Layout */
-        main { display: flex; flex: 1; overflow: hidden; }
-        .video-wrapper { flex: 3; background: #000; display: flex; align-items: center; }
-        .playlist-wrapper { flex: 1; background: var(--panel); overflow-y: auto; border-left: 1px solid #333; min-width: 250px; }
-        
+        .input-row {
+            display: flex;
+            gap: 10px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #444;
+            background: #000;
+            color: white;
+            outline: none;
+        }
+
+        input[type="text"]:focus { border-color: var(--accent); }
+
+        button {
+            padding: 0 20px;
+            border-radius: 6px;
+            border: none;
+            background: var(--accent);
+            color: #000;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover { background: #00d689; transform: translateY(-1px); }
+
+        /* Main Content */
+        main {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .video-section {
+            flex: 3;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 320px;
+            background: var(--panel-dark);
+            display: flex;
+            flex-direction: column;
+            border-left: 1px solid #333;
+        }
+
+        /* Search Bar di Sidebar */
+        .search-container {
+            padding: 15px;
+            background: #252525;
+        }
+
+        #search-channel {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: 1px solid #444;
+            background: #111;
+            color: white;
+        }
+
         /* Playlist Items */
-        .channel-item { padding: 12px; border-bottom: 1px solid #333; cursor: pointer; transition: 0.2s; font-size: 0.9rem; }
-        .channel-item:hover { background: #2a2a2a; color: var(--primary); }
-        .channel-item.active { background: #333; border-left: 4px solid var(--primary); color: var(--primary); }
+        #playlist {
+            flex: 1;
+            overflow-y: auto;
+        }
 
-        @media (max-width: 768px) {
+        .channel-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            border-bottom: 1px solid #2a2a2a;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .channel-item:hover { background: #2a2a2a; }
+        .channel-item.active {
+            background: #333;
+            border-left: 4px solid var(--accent);
+        }
+
+        .channel-logo {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            background: #000;
+            border-radius: 4px;
+            margin-right: 12px;
+        }
+
+        .channel-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .channel-name { font-size: 0.9rem; font-weight: 500; }
+
+        /* Status Overlay */
+        #status-msg {
+            padding: 10px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-dim);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
             main { flex-direction: column; }
-            .playlist-wrapper { height: 300px; }
+            .sidebar { height: 40%; min-width: 100%; }
+            .video-section { flex: none; height: 50%; }
         }
     </style>
 </head>
 <body>
 
+<header>
+    <div class="input-row">
+        <input type="text" id="m3u-url" placeholder="Paste link M3U di sini..." value="https://raw.githubusercontent.com/reokadhafi/iptvplus-yon/refs/heads/main/playlist.m3u">
+        <button onclick="fetchPlaylist()">LOAD</button>
+    </div>
+</header>
+
+<main>
+    <div class="video-section">
+        <video id="main-player" class="video-js vjs-big-play-centered vjs-16-9" controls preload="auto" width="100%">
+            <p class="vjs-no-js">Gunakan browser modern yang mendukung HTML5.</p>
+        </video>
+    </div>
+
+    <div class="sidebar">
+        <div class="search-container">
+            <input type="text" id="search-channel" placeholder="Cari nama channel..." onkeyup="filterChannels()">
+        </div>
+        <div id="status-msg">Silahkan klik LOAD untuk memuat playlist</div>
+        <div id="playlist">
+            </div>
+    </div>
+</main>
+
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+
+<script>
+    const player = videojs('main-player');
+    let allChannels = [];
+
+    // Fungsi Ambil Playlist
+    async function fetchPlaylist() {
+        const url = document.getElementById('m3u-url').value.trim();
+        const statusMsg = document.getElementById('status-msg');
+        
+        if (!url) return alert("Link M3U kosong!");
+
+        statusMsg.innerText = "Sedang mengunduh playlist...";
+        
+        try {
+            const response = await fetch(url);
+            if (!response.ok) throw new Error("Gagal mengambil file.");
+            const text = await response.text();
+            parseM3U(text);
+            statusMsg.innerText = "Berhasil dimuat!";
+        } catch (err) {
+            console.error(err);
+            statusMsg.innerHTML = "<span style='color:red'>Gagal muat! Cek CORS atau Link.</span>";
+        }
+    }
+
+    // Fungsi Parsing M3U
+    function parseM3U(data) {
+        const lines = data.split('\n');
+        allChannels = [];
+        let currentObj = null;
+
+        lines.forEach(line => {
+            line = line.trim();
+            if (line.startsWith('#EXTINF:')) {
+                const name = line.split(',').pop() || "Unnamed Channel";
+                const logoMatch = line.match(/tvg-logo="([^"]+)"/i);
+                currentObj = { 
+                    name: name, 
+                    logo: logoMatch ? logoMatch[1] : 'https://via.placeholder.com/40?text=TV'
+                };
+            } else if (line.startsWith('http') && currentObj) {
+                currentObj.url = line;
+                allChannels.push(currentObj);
+                currentObj = null;
+            }
+        });
+
+        renderPlaylist(allChannels);
+    }
+
+    // Fungsi Tampilkan ke HTML
+    function renderPlaylist(channels) {
+        const container = document.getElementById('playlist');
+        container.innerHTML = "";
+
+        channels.forEach((ch, index) => {
+            const item = document.createElement('div');
+            item.className = 'channel-item';
+            item.innerHTML = `
+                <img class="channel-logo" src="${ch.logo}" onerror="this.src='https://via.placeholder.com/40?text=TV'">
+                <div class="channel-info">
+                    <span class="channel-name">${ch.name}</span>
+                </div>
+            `;
+            item.onclick = () => playStream(ch.url, item);
+            container.appendChild(item);
+        });
+    }
+
+    // Fungsi Play Video
+    function playStream(url, element) {
+        // Efek Aktif
+        document.querySelectorAll('.channel-item').forEach(el => el.classList.remove('active'));
+        element.classList.add('active');
+
+        // Mainkan
+        player.src({
+            src: url,
+            type: 'application/x-mpegURL'
+        });
+        
+        player.play().catch(e => {
+            alert("Error: Media tidak dapat dimuat. Pastikan link aktif dan mendukung HTTPS/CORS.");
+        });
+    }
+
+    // Fungsi Search/Filter
+    function filterChannels() {
+        const query = document.getElementById('search-channel').value.toLowerCase();
+        const filtered = allChannels.filter(ch => ch.name.toLowerCase().includes(query));
+        renderPlaylist(filtered);
+    }
+
+    // Auto-load saat pertama buka (Opsional)
+    window.onload = () => { if(document.getElementById('m3u-url').value) fetchPlaylist(); };
+</script>
+
+</body>
+</html>
 <header>
     <strong>📺 Gemini IPTV Player</strong>
     <div class="input-group">
