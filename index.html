@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple IPTV Player</title>
+    
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    
+    <style>
+        body { background-color: #1a1a1a; color: white; font-family: sans-serif; margin: 0; padding: 20px; }
+        .container { max-width: 900px; margin: auto; }
+        .video-container { width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+        .info { margin-top: 20px; padding: 15px; background: #333; border-radius: 8px; }
+        h1 { font-size: 1.5rem; color: #00ff88; }
+        code { background: #000; padding: 5px; border-radius: 4px; color: #ffcc00; word-break: break-all; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Gemini IPTV Player</h1>
+    
+    <div class="video-container">
+        <video
+            id="my-video"
+            class="video-js vjs-big-play-centered vjs-16-9"
+            controls
+            preload="auto"
+            data-setup='{}'>
+            <source src="https://raw.githubusercontent.com/reokadhafi/iptvplus-yon/refs/heads/main/playlist.m3u" type="application/x-mpegURL">
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+        </video>
+    </div>
+
+    <div class="info">
+        <h3>Informasi Playlist:</h3>
+        <p>Memutar dari: <code>https://raw.githubusercontent.com/reokadhafi/iptvplus-yon/refs/heads/main/playlist.m3u</code></p>
+        <p><small>*Catatan: Pastikan link M3U dan channel di dalamnya mendukung CORS agar bisa diputar di browser.</small></p>
+    </div>
+</div>
+
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+</body>
+  </html>
