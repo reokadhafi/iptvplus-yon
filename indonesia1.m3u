@@ -3,19 +3,19 @@
 #EXTINF:-1 tvg-id="RCTI" group-title="Indonesia", RCTI
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://rcti-linier.rctiplus.id/hdntl=exp=1783388657~acl=%2F*~data=hdntl~hmac=21696a2968ce949d1d0e56c3fc03e3982988a684b0b03ba22618a486fbd50d50/rcti-sdi-avc1_210000=10-mp4a_96000=1.m3u8
+https://rcti-linier.rctiplus.id/hdntl=exp=1783406478~acl=%2F*~data=hdntl~hmac=06f8f5832bd6016284bd1a0d3485d0313635e237148c5f7f02a4a796aca9b3c2/rcti-sdi-avc1_600000=9-mp4a_96000=1.m3u8
 
 #EXTINF:-1 tvg-id="MNCTV" group-title="Indonesia", MNCTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://mnctv-linier.rctiplus.id/hdntl=exp=1783388655~acl=%2F*~data=hdntl~hmac=1bcb1cf1b99adf4c111f1f121f034525d56674f5b8b81e9cedd663969dae8332/mnctv-sdi-avc1_600000=8-mp4a_96000=1.m3u8
+https://mnctv-linier.rctiplus.id/hdntl=exp=1783406478~acl=%2F*~data=hdntl~hmac=06f8f5832bd6016284bd1a0d3485d0313635e237148c5f7f02a4a796aca9b3c2/mnctv-sdi-avc1_210000=10-mp4a_96000=1.m3u8
 
 #EXTINF:-1 tvg-id="GTV" group-title="Indonesia", GTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://gtv-linier.rctiplus.id/hdntl=exp=1783388657~acl=%2F*~data=hdntl~hmac=21696a2968ce949d1d0e56c3fc03e3982988a684b0b03ba22618a486fbd50d50/gtv-sdi-avc1_600000=5-mp4a_96000=1.m3u8
+https://gtv-linier.rctiplus.id/hdntl=exp=1783406478~acl=%2F*~data=hdntl~hmac=06f8f5832bd6016284bd1a0d3485d0313635e237148c5f7f02a4a796aca9b3c2/gtv-sdi-avc1_600000=5-mp4a_96000=1.m3u8
 
 #EXTINF:-1 tvg-id="INEWS" group-title="Indonesia", INEWS
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://inews-linier.rctiplus.id/hdntl=exp=1783388657~acl=%2F*~data=hdntl~hmac=21696a2968ce949d1d0e56c3fc03e3982988a684b0b03ba22618a486fbd50d50/inews-sdi-avc1_600000=10-mp4a_96000=1.m3u8
+https://inews-linier.rctiplus.id/hdntl=exp=1783406478~acl=%2F*~data=hdntl~hmac=06f8f5832bd6016284bd1a0d3485d0313635e237148c5f7f02a4a796aca9b3c2/inews-sdi-avc1_600000=10-mp4a_96000=1.m3u8
