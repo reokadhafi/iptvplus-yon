@@ -3,9 +3,9 @@
 #EXTINF:-1 tvg-id="RCTI" group-title="Indonesia", RCTI
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://rcti-linier.rctiplus.id/hdntl=exp=1785561304~acl=%2F*~data=hdntl~hmac=59aea9ead8e542480148be8b7205cd761d7452ea0118ffeb825282c498c9b7a4/rcti-sdi-avc1_600000=9-mp4a_96000=1.m3u8
+https://rcti-linier.rctiplus.id/hdntl=exp=1785580784~acl=%2F*~data=hdntl~hmac=ac544966fbbbd65f1106a1d0f643aec202e2f460fe65ee41756b728d0ce90b4c/rcti-sdi-avc1_600000=9-mp4a_96000=1.m3u8
 
 #EXTINF:-1 tvg-id="MNCTV" group-title="Indonesia", MNCTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://mnctv-linier.rctiplus.id/hdntl=exp=1785561304~acl=%2F*~data=hdntl~hmac=59aea9ead8e542480148be8b7205cd761d7452ea0118ffeb825282c498c9b7a4/mnctv-sdi-avc1_600000=8-mp4a_96000=1.m3u8
+https://mnctv-linier.rctiplus.id/hdntl=exp=1785580786~acl=%2F*~data=hdntl~hmac=6ce6b6e34f8371b497003697dabc6749ab49774b31d0405b5ec2e115cd11390f/mnctv-sdi-avc1_600000=8-mp4a_96000=1.m3u8
