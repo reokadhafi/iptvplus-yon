@@ -5,28 +5,28 @@
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://video.detik.com/trans7-sec/smil:trans7.smil/playlist.m3u8?wowzatokenstarttime=0&wowzatokenendtime=1786109046846&wowzatokenhash=Z7Bj1XfR8MbyU3EdPdd8e-hH5mYd5eAZ3jDxrQH5DPI%3D
+https://video.detik.com/trans7-sec/smil:trans7.smil/playlist.m3u8?wowzatokenstarttime=0&wowzatokenendtime=1786130130200&wowzatokenhash=1V5KYmhYbuuOYrd4XAdXooSlujVammLZax7WoCtf76A%3D
 #EXTINF:-1 group-title="INDONESIA" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/trans7.png?raw=true",TRANS7 2
 #EXTVLCOPT:http-referrer=https://20.detik.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://video.detik.com/trans7-sec/smil:trans7.smil/chunklist_w88426218_b744100_sleng_tkd293emF0b2tlbnN0YXJ0dGltZT0wJndvd3phdG9rZW5lbmR0aW1lPTE3ODYxMDkwNDY4NDYmd293emF0b2tlbmhhc2g9WjdCajFYZlI4TWJ5VTNFZFBkZDhlLWhINW1ZZDVlQVozakR4clFINURQST0=.m3u8
+https://video.detik.com/trans7-sec/smil:trans7.smil/chunklist_w865013747_b744100_sleng_tkd293emF0b2tlbnN0YXJ0dGltZT0wJndvd3phdG9rZW5lbmR0aW1lPTE3ODYxMzAxMzAyMDAmd293emF0b2tlbmhhc2g9MVY1S1ltaFlidXVPWXJkNFhBZFhvb1NsdWpWYW1tTFpheDdXb0N0Zjc2QT0=.m3u8
 #EXTINF:-1 group-title="INDONESIA" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/transtv.png?raw=true",TRANSTV 1
 #EXTVLCOPT:http-referrer=https://20.detik.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://video.detik.com/transtv-sec/smil:transtv.smil/playlist.m3u8?wowzatokenstarttime=0&wowzatokenendtime=1786109046847&wowzatokenhash=ib1nFPZB0ScEAMZBRPAq6MWNAlJrvAH067sFtKGfsiw%3D
+https://video.detik.com/transtv-sec/smil:transtv.smil/playlist.m3u8?wowzatokenstarttime=0&wowzatokenendtime=1786130130143&wowzatokenhash=0uzlYJdprdfH_tSuVclf-z3xhVMxot3I2PH0Z2EskuI%3D
 #EXTINF:-1 group-title="INDONESIA" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/transtv.png?raw=true",TRANSTV 2
 #EXTVLCOPT:http-referrer=https://20.detik.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://video.detik.com/transtv-sec/smil:transtv.smil/chunklist_w205303862_b744100_sleng_tkd293emF0b2tlbnN0YXJ0dGltZT0wJndvd3phdG9rZW5lbmR0aW1lPTE3ODYxMDkwNDY4NDcmd293emF0b2tlbmhhc2g9aWIxbkZQWkIwU2NFQU1aQlJQQXE2TVdOQWxKcnZBSDA2N3NGdEtHZnNpdz0=.m3u8
+https://video.detik.com/transtv-sec/smil:transtv.smil/chunklist_w1577239410_b744100_sleng_tkd293emF0b2tlbnN0YXJ0dGltZT0wJndvd3phdG9rZW5lbmR0aW1lPTE3ODYxMzAxMzAxNDMmd293emF0b2tlbmhhc2g9MHV6bFlKZHByZGZIX3RTdVZjbGYtejN4aFZNeG90M0kyUEgwWjJFc2t1ST0=.m3u8
 #EXTINF:-1 group-title="INDONESIA" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/metrotv.png?raw=true",METROTV 1
 #EXTVLCOPT:http-referrer=https://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
