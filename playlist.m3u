@@ -1,33 +1,5 @@
 #EXTM3U
 ## FROM: indonesia.m3u
-#EXTINF:-1 group-title="INDONESIA" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/trans7.png?raw=true",TRANS7 1
-#EXTVLCOPT:http-referrer=https://20.detik.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://video.detik.com/trans7-sec/smil:trans7.smil/playlist.m3u8?wowzatokenstarttime=0&wowzatokenendtime=1788216761587&wowzatokenhash=KCig00dnZFqPlDxCBHxy6iZHI9FSV5dbOfbZJePoqzk%3D
-#EXTINF:-1 group-title="INDONESIA" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/trans7.png?raw=true",TRANS7 2
-#EXTVLCOPT:http-referrer=https://20.detik.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://video.detik.com/trans7-sec/smil:trans7.smil/chunklist_w1722405915_b744100_sleng_tkd293emF0b2tlbnN0YXJ0dGltZT0wJndvd3phdG9rZW5lbmR0aW1lPTE3ODgyMTY3NjE1ODcmd293emF0b2tlbmhhc2g9S0NpZzAwZG5aRnFQbER4Q0JIeHk2aVpISTlGU1Y1ZGJPZmJaSmVQb3F6az0=.m3u8
-#EXTINF:-1 group-title="INDONESIA" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/transtv.png?raw=true",TRANSTV 1
-#EXTVLCOPT:http-referrer=https://20.detik.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://video.detik.com/transtv-sec/smil:transtv.smil/playlist.m3u8?wowzatokenstarttime=0&wowzatokenendtime=1788216761716&wowzatokenhash=b5zXlxgybmrRJ6m9aXy_CRAUZ5VokEBSgymW8FwibG8%3D
-#EXTINF:-1 group-title="INDONESIA" tvg-logo="https://github.com/riotryulianto/iptv-playlists/blob/main/icons/transtv.png?raw=true",TRANSTV 2
-#EXTVLCOPT:http-referrer=https://20.detik.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://video.detik.com/transtv-sec/smil:transtv.smil/chunklist_w431378685_b744100_sleng_tkd293emF0b2tlbnN0YXJ0dGltZT0wJndvd3phdG9rZW5lbmR0aW1lPTE3ODgyMTY3NjE3MTYmd293emF0b2tlbmhhc2g9YjV6WGx4Z3libXJSSjZtOWFYeV9DUkFVWjVWb2tFQlNneW1XOEZ3aWJHOD0=.m3u8
 #EXTINF:-1 group-title="INDONESIA" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/metrotv.png?raw=true",METROTV 1
 #EXTVLCOPT:http-referrer=https://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
@@ -132,21 +104,14 @@ https://op-flashcon-digdayahd-1.dens.tv/h/h24/01.m3u8
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://op-flashcon-digdayahd-1.dens.tv/h/h238/index.m3u8?app_type=web&userid=lite&chname=TVRI_Sport
+https://op-flashcon-digdayasd-1.dens.tv/h/h217/stream.m3u8?app_type=web&userid=lite&chname=TVRI_Sport
 #EXTINF:-1 group-title="INDONESIA" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/tvrisport.png?raw=true",TVRI_SPORT 2
 #EXTVLCOPT:http-referrer=https://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://op-flashcon-digdayahd-1.dens.tv/h/h238/02.m3u8
-#EXTINF:-1 group-title="INDONESIA" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/tvrisport.png?raw=true",TVRI_SPORT 3
-#EXTVLCOPT:http-referrer=https://www.dens.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://op-flashcon-digdayahd-1.dens.tv/h/h238/01.m3u8
+https://op-flashcon-digdayasd-1.dens.tv/h/h217/S1/mnf.m3u8
 #EXTINF:-1 group-title="INDONESIA" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/tvri.png?raw=true",TVRI 1
 #EXTVLCOPT:http-referrer=https://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
@@ -195,22 +160,22 @@ https://op-flashcon-digdayahd-1.dens.tv/h/h233/02.m3u8
 #EXTINF:-1 tvg-id="RCTI" group-title="Indonesia", RCTI
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://rcti-linier.rctiplus.id/hdntl=exp=1788269993~acl=%2F*~data=hdntl~hmac=7bd1a7ee4bd64ad0e38dae3eb902c5d5e9e4b5eb7d2495cd7c46f6930b7d253f/rcti-sdi-avc1_600000=9-mp4a_96000=1.m3u8
+https://rcti-linier.rctiplus.id/hdntl=exp=1788290065~acl=%2F*~data=hdntl~hmac=b15346bc8e2aecc3a9b7cefc9713e2aa765303d7ed5e7a8b28a04809402a7fff/rcti-sdi-avc1_600000=9-mp4a_96000=1.m3u8
 
 #EXTINF:-1 tvg-id="MNCTV" group-title="Indonesia", MNCTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://mnctv-linier.rctiplus.id/hdntl=exp=1788269993~acl=%2F*~data=hdntl~hmac=7bd1a7ee4bd64ad0e38dae3eb902c5d5e9e4b5eb7d2495cd7c46f6930b7d253f/mnctv-sdi-avc1_600000=8-mp4a_96000=1.m3u8
+https://mnctv-linier.rctiplus.id/hdntl=exp=1788290065~acl=%2F*~data=hdntl~hmac=b15346bc8e2aecc3a9b7cefc9713e2aa765303d7ed5e7a8b28a04809402a7fff/mnctv-sdi-avc1_600000=8-mp4a_96000=1.m3u8
 
 #EXTINF:-1 tvg-id="GTV" group-title="Indonesia", GTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://gtv-linier.rctiplus.id/hdntl=exp=1788269993~acl=%2F*~data=hdntl~hmac=7bd1a7ee4bd64ad0e38dae3eb902c5d5e9e4b5eb7d2495cd7c46f6930b7d253f/gtv-sdi-avc1_600000=5-mp4a_96000=1.m3u8
+https://gtv-linier.rctiplus.id/hdntl=exp=1788290066~acl=%2F*~data=hdntl~hmac=f697bd2e062bebf973f2f386f1af677f6e3c6859e418475efc32a5fa871d124b/gtv-sdi-avc1_600000=5-mp4a_96000=1.m3u8
 
 #EXTINF:-1 tvg-id="INEWS" group-title="Indonesia", INEWS
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://inews-linier.rctiplus.id/hdntl=exp=1788269994~acl=%2F*~data=hdntl~hmac=39fceaffb5675a255c1a57bb11169f102eb4fe0ed045e80c16c2f68e6f2d8364/inews-sdi-avc1_600000=10-mp4a_96000=1.m3u8
+https://inews-linier.rctiplus.id/hdntl=exp=1788290067~acl=%2F*~data=hdntl~hmac=f6b55400319f5dbcfc9c6963a0ba62b9ce24e7340e46706ef1fcd853211b7d78/inews-sdi-avc1_600000=10-mp4a_96000=1.m3u8
 
 ## FROM: premium.m3u
 #EXTINF:-1 group-title="PREMIUM" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/mycinema_europe.png?raw=true",MY CINEMA EUROPE HD 1
