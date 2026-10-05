@@ -3,19 +3,19 @@
 #EXTINF:-1 tvg-id="RCTI" group-title="Indonesia", RCTI
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://rcti-linier.rctiplus.id/hdntl=exp=1791229563~acl=%2F*~data=hdntl~hmac=e153a77803df7a426fe74dcee6e53ad7cace047855b961b9765807455ad77c1f/rcti-sdi-avc1_600000=9-mp4a_96000=1.m3u8
+https://proxy-b.rctiplus.id/live/web/rcti/rcti-sdi-avc1_600000=9-mp4a_96000=1.m3u8?auth_key=1791219664-a454702b1ced64e241554a02bf2f2bd4-0-50a7ff80a0afbaabcc5903b401801bd6
 
 #EXTINF:-1 tvg-id="MNCTV" group-title="Indonesia", MNCTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://mnctv-linier.rctiplus.id/hdntl=exp=1791229563~acl=%2F*~data=hdntl~hmac=e153a77803df7a426fe74dcee6e53ad7cace047855b961b9765807455ad77c1f/mnctv-sdi-avc1_600000=8-mp4a_96000=1.m3u8
+https://proxy-b.rctiplus.id/live/web/mnctv/mnctv-sdi-avc1_600000=8-mp4a_96000=1.m3u8?auth_key=1791219663-2ee38f64eebdb5d1bb7c02003cbab88c-0-4359b204e45d9f2034ead02ceffcba4b
 
 #EXTINF:-1 tvg-id="GTV" group-title="Indonesia", GTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://gtv-linier.rctiplus.id/hdntl=exp=1791229563~acl=%2F*~data=hdntl~hmac=e153a77803df7a426fe74dcee6e53ad7cace047855b961b9765807455ad77c1f/gtv-sdi-avc1_600000=5-mp4a_96000=1.m3u8
+https://proxy-b.rctiplus.id/live/web/gtv/gtv-sdi-avc1_600000=5-mp4a_96000=1.m3u8?auth_key=1791219664-f41dfae097e594989ad5dc7a15a23b43-0-2bf95c4e75e94fba895e370890b313b9
 
 #EXTINF:-1 tvg-id="INEWS" group-title="Indonesia", INEWS
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://inews-linier.rctiplus.id/hdntl=exp=1791229563~acl=%2F*~data=hdntl~hmac=e153a77803df7a426fe74dcee6e53ad7cace047855b961b9765807455ad77c1f/inews-sdi-avc1_600000=10-mp4a_96000=1.m3u8
+https://proxy-b.rctiplus.id/live/web/inews/inews-sdi-avc1_600000=10-mp4a_96000=1.m3u8?auth_key=1791219663-c14eeb454e5aca7f84c1f3ef6355851a-0-d1a95998e71a893f9272342da09faa37
