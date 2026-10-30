@@ -41,6 +41,13 @@ https://op-flashcon-digdayahd-1.dens.tv/h/h308/stream.m3u8?app_type=web&userid=l
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://op-flashcon-digdayahd-1.dens.tv/h/h308/S1/mnf.m3u8
+#EXTINF:-1 group-title="PREMIUM" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/Dance.png?raw=true",DANCE TV 3
+#EXTVLCOPT:http-referrer=https://www.dens.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://op-flashcon-digdayahd-1.dens.tv/h/h308/S2/mnf.m3u8
 #EXTINF:-1 group-title="PREMIUM" tvg-logo="https://github.com/reokadhafi/iptvplus-yon/blob/main/logo/motorvision.png?raw=true",MOTORVISION 1
 #EXTVLCOPT:http-referrer=https://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
@@ -55,6 +62,34 @@ https://op-flashcon-digdayahd-1.dens.tv/h/h09/index.m3u8?app_type=web&userid=lit
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://op-flashcon-digdayahd-1.dens.tv/h/h09/01.m3u8
+#EXTINF:-1 group-title="PREMIUM",wedosports 1
+#EXTVLCOPT:http-referrer=https://www.dens.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://op-flashcon-digdayahd-1.dens.tv/h/h71/wedo_sport.m3u8?app_type=web&userid=lite&chname=wedoSports
+#EXTINF:-1 group-title="PREMIUM",wedosports 2
+#EXTVLCOPT:http-referrer=https://www.dens.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://amg00735-amg00735c45-denstv-apac-7616.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg00735-videosolutionsagfast-wedosportsasia-denstvapac/cb573e1e796c648b92d43c61cef64882847b3dcb0e6c886470af4a9765d97800dbe8ae84ae5b910c4c9e1fc061017d360439cd1dd56c49c1da63b820743c4b21fdcde00080dd0d0cb1df11292ca36265299a7369cc350f7bd2ec5a2f803ebe764c53cb017c593f88f258a9764cc59e0a957f39e8fc8b307b24455a9c5a43e6a64cb7abb70f4d8964a5b50140c07d44fa83439fd401b285dc588340d373a2419c91f98d801480e4cf598a6f4ef00d224054bdc210bac759b9d49f7a309d03472c7c74d5d3587ad35efc23624ff1feb1d20d00d0cafb42ab613cba128c4ec641e290690dd583648bd7dcf5434a38b6d05a2b47f2a7c8eb8a60bce543dc70917d0aa2c90f5e0092f34d924e0a2b99fc843e85c81484a222bf79087737ed9e5f9291be82a0e5c31adc6dfdcefa9c32555d232a36c60cf2d43d8069ea71a698477a1c5512f9d315e596c95235554a84ab57c05c4eea8cc5d0894e73e1482f77c42c99570c67c9744b79e626f6d37c4f813405883072aa0c65ce12b2e862a5e7e8e4003aa7d78817ac38a1e65ca08368c35a355706bce53f1f141c0fb7c0524d61298d159e90a08750060febfbc884b0703015361a574cc6a2d079958acf3e0e54a67723737f0418860eb5388d51a961fc7ff675ca5b6466871f96b1cde752c738762f863c/121/1920x1080_5903040/index.m3u8
+#EXTINF:-1 group-title="PREMIUM",wedotvbig-stories 1
+#EXTVLCOPT:http-referrer=https://www.dens.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://op-flashcon-digdayahd-1.dens.tv/h/h69/wedotv_big_stories.m3u8?app_type=web&userid=lite&chname=wedotvBig_Stories
+#EXTINF:-1 group-title="PREMIUM",wedotvbig-stories 2
+#EXTVLCOPT:http-referrer=https://www.dens.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://amg00735-amg00735c19-denstv-apac-7624.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg00735-videosolutionsagfast-wedobigstories-denstvapac/cb573e1e796c648b92d43c61cef64882847b3dcb0e6c886470af4a9765d97800dbe8ae84ae5b910c4c9e1fc061017d360439cd1dd56c49c1da63b820743c4b21fdcde00080dd0d0cb1df11292ca36265299a7369cc350f7bd2ec5a2f803ebe764c53cb017c593f88f258a9764cc59e0a957f39e8fc8b307b24455a9c5a43e6a64cb7fbe35810d86ef3b40140c07d41fa83439fd401e987dc5e8347d373a3459f9bf1dfd546848caf599a03eb307b3f4818a2847097f407c4b0ff6a368c612934773f819890f15e2c877a192c929bccbb75ed61a6e343ba6733ab12a515fc5ae26aba1998ef4fada8c9b3282b02a5d44b5e29a1e8a5b7a15b59de73e9ae9bba1919a2e306747a9321b25028379ee9ce1a90fc199fa02696a07b1839cde333f1e98980e0be994f9231f5cbfd8e38515a7101038b60f8ec07bc2ecd6897dd1a252e262ec4a152d496e64d396672dcee34b71f16ada9ece9ba3537c7742600a80ab55c017cde0b6f73eb3efc94281ef94c64be3239eb4a0a834df2ab29fbb3e6bf6a51d7d7d23099058b8e03c7cb58d507564c118ce23e56534d7ec99c08675c42d656dbc3d8e8610803f5ca97bcaa3e39172928411884f0e24f8e9ccc5b6c7cae682770642f04820bc46ce0155b0c139370b9cf0d7a91744647839c3b534e51cca6dbe280c6da36d215b6f4fa293f060314d75b0c206feca29449f84a2014136689096557a4175f7fb0e9a38f98907ef19e71a43c6e1111ab9a7b7a0842635c088e9e6cdb5bdfc971d3f9c35fbe89e7767e8c3f9e5b62f4b5db69f6ff84b52665f791501c6985d61a9f0747a11ed03f91c275aada3f6e2735445cdb9e51c26db7b5e9af875e28d72d2a5aa8119292e7bcd86345ee90385c596b74240f99f2b16ec2bef477097a96d14f199ee2993283435f322d53dfc071367d2b736efe1f551ac28aca80acd81711800ea637a10172f3d8550bc61e404afa6ca303cd17813af9fcc76da8a889cee6d7c1276c1f6d0a56a0355a5ad73cf9800be0e24832bfc9c3d2d360937af526fbaa826eb56cee9be74e999993a8af2c57460c03b581d6ea04d7b93d40b950d259624dcfddaaa733bb92972f4cc771acc50b67a53b3e7acca8f00b816b9bee2b25ea82260881247c91aeaf684c8817a626336ff882d43d6c819059e138f1ffc00642880709f7070f31de1bd4b3ff383fafec69433b8b2c08837088cda32c7a7abc9d6b206a404c2200df44533bf77c0d811fa1eff6be782aed50da5bdfdeab112af1c1f55f5dae9f1835e943fe5ec4bf2d4c43/104/1920x1080_5288800/index.m3u8
 #EXTINF:-1 group-title="PREMIUM",wedotvmovies 1
 #EXTVLCOPT:http-referrer=https://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
