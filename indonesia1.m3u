@@ -3,4 +3,9 @@
 #EXTINF:-1 tvg-id="MNCTV" group-title="Indonesia", MNCTV
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://proxy-b.rctiplus.id/live/web/mnctv/mnctv-sdi-avc1_600000=8-mp4a_96000=1.m3u8?auth_key=1795166533-02c7dea69a4f4602b4562c7cf77a84d4-0-577c3bd00176ea33e8df5d9e8e303429
+https://proxy-b.rctiplus.id/live/web/mnctv/mnctv-sdi-avc1_600000=8-mp4a_96000=1.m3u8?auth_key=1795214891-50bfbb05eca3c3feb1eaf90c85294afb-0-3e10f49c357ee653961c6dc97cbc6ebb
+
+#EXTINF:-1 tvg-id="INEWS" group-title="Indonesia", INEWS
+#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://proxy-b.rctiplus.id/live/web/inews/inews-sdi-avc1_600000=10-mp4a_96000=1.m3u8?auth_key=1795214891-7821aad2d6edefbcc1ca9816315a6a10-0-9734f42214ba78c353fcc4718c440196
